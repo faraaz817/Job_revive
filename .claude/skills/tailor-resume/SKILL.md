@@ -9,7 +9,7 @@ Workflow: **JD in → fit check → criteria map → `resume.md` draft → user 
 The Markdown file the user approves is the exact input to the renderer, so what they read is what ships.
 
 Read these before drafting, every time:
-- `base_resume.md` — the complete inventory of sourced material. Every line in a tailored resume comes from here (or a project README under the repo root). Nothing else.
+- `base_resume.md` — the complete inventory of sourced material. Every line in a tailored resume comes from here (or a project README under `Source/`). Nothing else. `Source/GitHub_Overview.md` indexes what each folder is.
 - `.claude/skills/tailor-resume/au-standards.md` — the Australian conventions and the bullet style. Follow it; it is why this skill exists.
 - `_build/README.md` — the constrained Markdown format the renderer understands. A line that does not follow it renders wrong.
 

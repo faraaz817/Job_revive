@@ -1,7 +1,7 @@
 # Base Resume
 
 Two-page A4 resume (`Faraaz_Mohammed_Resume_Base.docx` / `.pdf`, this folder) assembled from every
-README in this collection, plus the original hand-written template. It is the base to tailor from
+README under `Source/`, plus the original hand-written template. It is the base to tailor from
 for individual applications, not a doc to send as-is without checking the items flagged below.
 
 Built 17 September 2026, from a conversation that read every project README, the KMIT transcript,
@@ -12,7 +12,7 @@ alongside it), then cross-checked dates and links against source before writing 
 
 The existing template had the right shape (contact block, summary, experience, education,
 projects, publication, skills, certs) but under-represented Prodegee — 4 generic bullets against a
-semester of measured, documented work in `Prodegee-main/` — and had one date error (B.Tech end
+semester of measured, documented work in `Source/Prodegee-main/` — and had one date error (B.Tech end
 date) against the KMIT transcript. The brief was to extract what the template got right (name,
 contact details, degree dates, target-role framing) and fill in the rest from source, asking
 before making calls that change the document's substance rather than guessing.
@@ -20,7 +20,7 @@ before making calls that change the document's substance rather than guessing.
 ## How it was built
 
 ```
-Faraaz_Mohammed_Resume.docx (template)         Project READMEs (Prodegee, Time_Flow, MGM_Prayer_Alerts,
+Faraaz_Mohammed_Resume.docx (template)         Source/ READMEs (Prodegee, Time_Flow, MGM_Prayer_Alerts,
     └─ pandoc/XML extraction                    Gemma_Delegation_System, published paper, KMIT, GitHub_Overview)
          → name, contact, target roles, dates       └─ every resume bullet sourced and cross-checked
          → items with no README backing (Bro,             against the README it came from
@@ -54,9 +54,9 @@ a human would proof a Word document rather than trust that "the text fits."
 | Prodegee dates | "Mar 2026 – Present" → "Mar 2026 – Jun 2026" | commit history ends 16 Jun 2026 per the contributions doc; user confirmed this framing |
 | B.Tech end date | "Mar 2024" (template) → "May 2024" | KMIT Complete Course Completion Certificate |
 | Time Flow, MGM Prayer Alerts, Gemma Delegation System | Each expanded from one line to two evidence bullets + a link line | respective project READMEs |
-| Agent skills | Added as a project bullet (was absent) | `Claude_Skills/README.md` |
-| Publication | Named the Canny-edge notebook as the underlying code | `Maize_Leaf_Disease_ML/README.md` |
-| Heart Disease notebook | Left out entirely | its own README documents label leakage and a degenerate test split; not in `GitHub_Overview.md`'s include list |
+| Agent skills | Added as a project bullet (was absent) | `Source/Claude_Skills/README.md` |
+| Publication | Named the Canny-edge notebook as the underlying code | `Source/Maize_Leaf_Disease_ML/README.md` |
+| Heart Disease notebook | Left out entirely | its own README documents label leakage and a degenerate test split; not in `Source/GitHub_Overview.md`'s include list |
 | Grades | Omitted | user's call — mid-range CGPA (7.18/10), no RMIT GPA on file |
 
 ## Decisions made by asking, not guessing
@@ -114,7 +114,7 @@ numbers, same sources — only phrasing, order and length changed:
 - **Portfolio site and LinkedIn are out of sync.** Both still say Prodegee "Mar 2026 – Present"
   as of this write-up; the resume says Mar–Jun 2026. Align them before a recruiter cross-checks.
 - **GitHub profile hygiene not yet actioned.** `AI-p2` (should be private per its own RMIT
-  template README) and six scratch repos are still public — see `GitHub_Overview.md`.
+  template README) and six scratch repos are still public — see `Source/GitHub_Overview.md`.
 - **Six template items are unverified.** Bro, NeuroVisualZ, IBM Z toolchain + Credly badges, SIH,
   Vachan Speakers Club and Taher Foundation have no README in this collection; they were kept on
   the user's word, not cross-checked against a source document the way everything else here was.
