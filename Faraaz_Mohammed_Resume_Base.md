@@ -32,7 +32,8 @@ Faraaz_Mohammed_Resume.docx (template)         Project READMEs (Prodegee, Time_F
                         clarifying questions (AskUserQuestion):
                         Prodegee dates, AI/ML vs SE framing, grades, unverified items
                                         ▼
-                          _build/build_resume.js  (docx-js)
+                          _build/build_resume.js  (docx-js; since
+                          replaced by _build/render_resume.js)
                             → styled to match the template: A4, Calibri,
                               navy #1F3A5F headings, grey #444444 meta text
                             → rendered via LibreOffice + pdftoppm each pass,
@@ -74,16 +75,36 @@ assumed:
 
 ## Regenerating or tailoring
 
+The content now lives in `base_resume.md` (constrained Markdown, format in `_build/README.md`);
+the `.docx`/`.pdf` are rendered from it:
+
 ```bash
 cd _build
-npm install docx                                   # once
-node build_resume.js ../Faraaz_Mohammed_Resume_Base.docx
+npm install                                        # once
+node render_resume.js ../base_resume.md ../Faraaz_Mohammed_Resume_Base.docx
 soffice --headless --convert-to pdf ../Faraaz_Mohammed_Resume_Base.docx --outdir ..
 ```
 
-Edit the content arrays in `_build/build_resume.js`, not the `.docx` directly — the generator is
-what keeps every line traceable back to a README. See `_build/README.md` for the styling details
-(page size, fonts, colours, right-tab date alignment).
+Edit `base_resume.md`, not the `.docx`. Per-application tailoring is done by the `tailor-resume`
+skill in `.claude/skills/tailor-resume/` — paste a job ad or URL and it drafts
+`applications/<Company>_<Role>/resume.md` from the base for review, renders the PDF on approval,
+and tracks the application in `applications/README.md`.
+
+## Second pass — 17 September 2026, Australian conventions
+
+The first build reproduced the template's structure faithfully; this pass reworked it for how
+Australian screeners read (see `.claude/skills/tailor-resume/au-standards.md`). Same facts, same
+numbers, same sources — only phrasing, order and length changed:
+
+| Change | Why |
+| --- | --- |
+| Generator replaced: `_build/build_resume.js` (content inline in JS) → `_build/render_resume.js` (renders Markdown) | The approved Markdown is now the exact input to the PDF — nothing to port by hand per application. Verified pixel-identical against the old generator's output before switching. |
+| "Summary" → "Profile", rewritten to 4 lines | The old summary led with Prodegee specifics (7.2M polygons, 90% under-count) that mean nothing in a six-second scan; the profile now says degree → strongest evidence → breadth → what is sought. |
+| Technical Skills moved from the bottom of page 2 to under the Profile | Screeners look for the stack match on page 1. |
+| Every bullet cut to ≤ 2 rendered lines, verb → action → result; the 7th Prodegee bullet split into two | 3–4-line bullets bury the result; the skill selects bullets per ad, so each needs to stand alone. |
+| Work-rights line now leads with "Full Australian working rights" | The phrase recruiters need; "Temporary" as the first word made the visa the headline. |
+| "Referees: Available on request." added | Australian convention; its absence is noticed. |
+| Location trimmed to "Melbourne, VIC"; "willing to relocate" moved into the Profile | Suburb/state is the norm; the header line was wrapping. |
 
 ## Known issues / Limitations
 
@@ -100,5 +121,5 @@ what keeps every line traceable back to a README. See `_build/README.md` for the
 - **"15,000-image dataset"** in the publication line is the paper's own published claim; the
   underlying notebook in this collection ran on 2,000 images (500 per class). Worth knowing before
   an interview question about the paper.
-- **This is a base resume, not a per-application one.** No JD-specific keyword tailoring or
-  section reordering has been done — that's the next pass, per role.
+- **This is a base resume, not a per-application one.** It is the inventory the `tailor-resume`
+  skill selects from; it should never be sent as-is.
