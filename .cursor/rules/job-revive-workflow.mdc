@@ -1,0 +1,26 @@
+---
+description: Job_revive resume workspace — use Claude skills; never fabricate claims
+alwaysApply: true
+---
+
+# Job_revive
+
+This is a job-search / resume workspace, not a product codebase. Source of truth for procedure is under `.claude/skills/` — follow those skills; do not reinvent the workflow.
+
+## When to use which skill
+
+- Job ad pasted or URL, "tailor my resume", "apply to…", or status updates ("applied to X", "X rejected me", "interview with X") → read and follow `.claude/skills/tailor-resume/SKILL.md` (and `au-standards.md`).
+- Before showing any resume pages, when a render looks wrong, or when re-rendering `base_resume.md` → `.claude/skills/proof-resume/SKILL.md` (`_build/proof.sh`).
+
+## Hard rules
+
+- **Sourced or absent.** Every claim must come from `base_resume.md` or a README under `Source/`. Rephrase, reorder, cut — never add facts, tools, numbers, or dates.
+- **No silent fabrication to fill gaps.** Mark gaps honestly in `notes.md`; ask the user if something might be true but is not sourced.
+- **No final PDF without explicit approval.** Draft `applications/<Company>_<Role>/resume.md`, wait for "approve", then render. User edits to that file win.
+- **Fit check first.** Citizenship/PR required, clearance, 3+ years mandatory, or closed ad → stop and ask before drafting.
+- **Australian English** and conventions in `au-standards.md`. Two pages max; verify with `_build/proof.sh`, not by eye alone. Never trim wraps until `_build/preflight.sh` passes.
+
+## Do not
+
+- Duplicate the tailor/proof skills into new Cursor rules or invent a parallel pipeline.
+- Treat `.claude/hooks/` SessionStart as required on local Cursor (Claude Code remote only).
