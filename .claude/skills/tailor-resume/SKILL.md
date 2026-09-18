@@ -92,9 +92,17 @@ cd _build && node render_resume.js "../applications/<dir>/resume.md" "../applica
 
 The PDF is named `Faraaz_Mohammed_Resume_<Company>_<Role>.pdf` — the candidate's name goes first because recruiters download dozens of files and a file called `Atlassian_Graduate-Engineer.pdf` tells them nothing. Keep the `.docx` beside it; some portals want Word.
 
-Re-check the page count on the final render. Then:
+Re-check the final render with `_build/proof.sh` (pass the final name as the second
+argument, or just re-proof `resume.md` — same content). Then:
+
 - Append the approval to `notes.md` § Log.
-- Add or update the row in `applications/README.md` with status **Ready** (or **Applied** if the user says they've submitted), and add a line to the Updates log there.
+- Add or update the row in `applications/README.md` with status **Ready** (or **Applied** if
+  the user says they've submitted), a **Resume** cell linking the rendered PDF at
+  `<Company>_<Role>/Faraaz_Mohammed_Resume_<Company>_<Role>.pdf`, and a line in the Updates log.
+- **Commit and push `jd.md`, `notes.md`, `resume.md`, the `.pdf`, the `.docx` and the tracker
+  row.** This is not optional and it is not tidying: an unpushed render exists only inside a
+  session container that gets reclaimed, and the whole point is a link the user can open on a
+  phone. Give them that link in the reply — not just the file.
 
 ## 8. Status updates
 
