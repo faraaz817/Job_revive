@@ -65,6 +65,26 @@ Yes. Soft flags only. Drafting.
 
 ## Log
 
-- **18 Sep 2026** — Applied. Status **Applied**.
+- **18 Sep 2026** — Applied. Status **Applied**. Application form essay draft saved under § 5.
 - **18 Sep 2026** — Approved. Rendered `Faraaz_Mohammed_Resume_Maincode_AI-Software-Engineer-Back-End.pdf` / `.docx`. Status **Ready**.
+
+## 5. Application form — long answer (draft)
+
+Paste-ready. Sourced only from Prodegee + Gemma (base resume). Edit tone before submit.
+
+### Earliest start
+Resume says available immediately — pick **today** or the next Monday you can actually start on-site in Melbourne.
+
+### Unrestricted work rights
+485 Post-Study Work = full-time work, no employer sponsorship, but time-limited. If the form is Yes/No only, **Yes** is the usual reading against this JD (they already said no sponsorship). Be ready to name subclass 485 at screening; do not hide it.
+
+### Essay (paste)
+
+The hardest systems problem I worked on recently was during my AI/ML internship at Prodegee (RMIT industry capstone, Mar–Jun 2026). Our pipeline inferred building footprints for off-grid electrification planning. Downstream generators kept failing evaluation, and the natural assumption was that the fitting stage was wrong.
+
+What made it difficult was that the failure looked local but was not. Three separate generators all failed the same way. I built an IoU evaluation harness for compound polygons so we could measure behaviour instead of arguing from intuition, then traced the shared failure to a ~35× over-scoped upstream cluster — a boundary problem one stage earlier, not a bug in the fitting code. That redirected the next assignment. Separately, a ±20% sensitivity harness across 191 villages showed cluster radius dominated the output (±36–44% swing); recalibrating 75 → 200 m fixed a 90%+ household under-count (0.069 → 0.415). The lesson was operational: measure the running system, distrust the first blame target, and treat upstream contracts as part of reliability.
+
+I have also built smaller services that sit next to models — an MCP server that delegates work to a local Gemma model and fails open to a frontier model when Ollama is unavailable, and a Claude API router that classifies request complexity before choosing a model — so I care about graceful failure and clear service boundaries, not only training accuracy.
+
+I want to do this work at Maincode because Matilda is a production model you train and serve yourselves. The problems you describe — inference APIs, load behaviour, failure propagation, keeping services reliable over long runtimes — are exactly the layer I want to learn deeply, on a real system rather than a wrapper around someone else's API. Melbourne on-site with a small team that owns the full stack is the environment I am looking for.
 - **18 Sep 2026** — JD captured from pasted LinkedIn text + URL. Fit check: soft flags only (485 "unrestricted" wording; ~4 months vs "1–2 years"; high applicant volume; no production LLM serving at their scale). Criteria map written; `resume.md` drafted for review.
