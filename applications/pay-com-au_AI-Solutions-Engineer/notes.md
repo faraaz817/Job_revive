@@ -64,5 +64,6 @@ Yes. Soft flags only. Strong match on MCPs, Claude, Python/TypeScript, APIs, pac
 
 ## Log
 
+- **18 Sep 2026** — Cover letter drafted (`cover_letter.md`) and rendered to PDF/DOCX. Honest on automation-breadth and PII gaps; leads with MCP/skills, discovery, judgment.
 - **18 Sep 2026** — Approved. Rendered `Faraaz_Mohammed_Resume_pay-com-au_AI-Solutions-Engineer.pdf` / `.docx`. Status **Ready**.
 - **18 Sep 2026** — JD captured from pasted LinkedIn text + URL. Fit check: soft flags only (police check; n8n GAP; automation-breadth stretch; PII/fintech GAP; high volume). Criteria map written; `resume.md` drafted for review.
