@@ -36,7 +36,7 @@ app, an offline-first PWA and an MCP-based LLM tool in 2026. Seeking a graduate 
 
 ## Education
 ### Master of Artificial Intelligence — RMIT University | Jul 2024 – Jul 2026
-> Melbourne, VIC  ·  Coursework: Intelligent Decision Making (ASP/Clingo), Computer Vision, Machine Learning, AI Systems Design
+> Melbourne, VIC  ·  Coursework: Intelligent Decision Making (ASP/Clingo), Computer Vision, Machine Learning, AI Systems Design, Internet of Things (IoT)
 ### Bachelor of Technology (Information Technology) — Keshav Memorial Institute of Technology | Dec 2020 – May 2024
 > Hyderabad, India (affiliated to JNTUH)  ·  Coursework incl. Machine Learning, Neural Networks & Deep Learning, Data Mining
 
