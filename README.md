@@ -6,7 +6,8 @@ Australian job ad, and a tracker for the applications that go out. The point is 
 the resume is unsourced and nothing sent is untracked.
 
 Faraaz Mohammed, Melbourne — Master of AI (RMIT, 2026), looking for graduate AI/ML and software
-engineering roles. Portfolio at [faraaz817.github.io](https://faraaz817.github.io);
+engineering roles. **[Download the résumé (PDF)](Faraaz_Mohammed_Resume_Base.pdf).**
+Portfolio at [faraaz817.github.io](https://faraaz817.github.io);
 code at [github.com/faraaz817](https://github.com/faraaz817).
 
 ## Why
@@ -48,7 +49,7 @@ applicant-tracking systems parse cleanly.
 | Path | What it is |
 | --- | --- |
 | `Source/` | The material. One folder per project or document, each with a README written in the same shape (summary → why → how it works → limitations) and candid about what did not work. `Source/GitHub_Overview.md` indexes the public repos and says which made the resume and which did not. |
-| `base_resume.md` | The base resume in the renderer's constrained Markdown — the superset the skill selects from. **Local only** (gitignored): it carries contact details. |
+| `base_resume.md` | The base resume in the renderer's constrained Markdown — the superset the skill selects from. Tracked on purpose, contact details and all: this is the resume employers should find here. |
 | `Faraaz_Mohammed_Resume_Base.md` | Write-up of how the base was built, what changed from the original template, the decisions made by asking rather than guessing, and its known issues. |
 | `_build/` | `render_resume.js` (Markdown → .docx via docx-js) and the format spec in its README. |
 | `.claude/skills/tailor-resume/` | The skill: `SKILL.md` is the procedure; `au-standards.md` is the Australian resume conventions it follows — format, tone, the fit-check table for a Temporary Graduate (485) visa holder, and bullet before/afters. |
