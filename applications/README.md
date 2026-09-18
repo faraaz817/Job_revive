@@ -9,7 +9,7 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 
 | # | Date | Company | Role | Location | Source | Closes | Status | Folder | Last update |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 2026-09-17 | eShepherd (Gallagher) | Computer Vision Engineer (Vision Weigh) | Not stated — unconfirmed whether AU or NZ; see notes.md | Company careers page | Not stated | Ready | [eShepherd_Computer-Vision-Engineer](eShepherd_Computer-Vision-Engineer/) | 2026-09-18 |
+| 1 | 2026-09-17 | eShepherd (Gallagher) | Computer Vision Engineer (Vision Weigh) | Not stated — unconfirmed whether AU or NZ; see notes.md |  | Not stated | Ready | [eShepherd_Computer-Vision-Engineer](eShepherd_Computer-Vision-Engineer/) | 2026-09-18 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
