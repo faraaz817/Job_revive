@@ -6,10 +6,12 @@ Captured 17 Sep 2026. Ad text in `jd.md`.
 
 ### Hard blockers
 
+One of the two is resolved; the seniority one stands.
+
 | Signal | Assessment |
 | --- | --- |
 | **Ownership scope stated as senior/lead** — "You will **own** the vision work, backed by specialists across data, software, firmware, hardware and product"; "take Vision Weigh from working prototype to hardware running reliably on commercial farms"; "**be a subject matter expert in computer vision**"; "make your own calls" | Per `au-standards.md` § 6, "senior"/"lead" framing as a requirement is a hard blocker. No years are stated, but the scope — sole owner of the hardest technical problem in the portfolio, directing specialists across five disciplines — is not a graduate brief. This is the blocker, not any single missing library. |
-| **Location not stated; ad describes Gallagher as "the New Zealand company"; role is "office first"** | Unresolved. eShepherd's product origin (Agersens) is Melbourne, but Gallagher's base is Hamilton, NZ. **If this role sits in New Zealand, the Temporary Graduate (485) visa does not apply and it is an automatic reject.** Must be confirmed from the live ad before any time is spent. |
+| ~~Location not stated; ad describes Gallagher as "the New Zealand company"~~ | **RESOLVED 18 Sep 2026 — the role is in Australia** (confirmed by Faraaz). The 485 applies and no sponsorship is required, so this is no longer a blocker. City still unstated; the ad is "office first", so confirm which office before accepting an interview. |
 
 ### Soft flags
 
@@ -100,12 +102,15 @@ Render verified visually at 80 dpi, both pages: 2 pages A4, page 2 ~52% full, ev
 
 The first round of page proofs was invalid. Carlito was not installed in the render container, so LibreOffice substituted DejaVu Sans, which is materially wider than Calibri; bullets appeared to wrap to three lines when they do not. Content was trimmed to fix those phantom wraps, which left page 2 at ~40%. After installing `fonts-crosextra-carlito`, the trims were reverted and the Prodegee Mauritania/XGBoost bullet restored (7 bullets rather than the skill's 4–6 — the ad's "put mistakes on the table early" is evidenced literally by its self-flagged metric, and page 2 needs the content). The font prerequisite is now documented in `_build/README.md`.
 
-The fit blockers in § 1 stand and are unresolved:
+Blockers:
 
-1. **Seniority / SME scope** — raised with the user; they supplied `base_resume.md` and asked to proceed, which resolves the drafting block but not the underlying mismatch.
-2. **Location still unconfirmed.** If the role is in New Zealand the 485 does not apply. Must be checked on the live ad before submitting.
+1. **Location — resolved.** Australia, confirmed 18 Sep 2026. The 485 applies.
+2. **Seniority / SME scope — stands.** The role is scoped as owner and subject-matter expert for the vision work, and PyTorch, segmentation/keypoints/pose, edge hardware and depth sensing have no evidence in `Source/` (§ 2). Raised twice and Faraaz has chosen to proceed; recorded here so a rejection can be read against it rather than guessed at.
+
+Nothing else is outstanding. The resume is rendered, tracked and linked from the tracker.
 
 ## Log
 
 - **17 Sep 2026** — Ad captured to `jd.md`. Fit check and criteria map completed. Two blockers raised with the user: missing `base_resume.md` in this clone, and the senior/SME ownership scope of the role. Awaiting the user's call on whether to proceed.
 - **18 Sep 2026** — User supplied `base_resume.md`. Criteria map corrected on three points in the user's favour: RMIT coursework includes Computer Vision, `Docker (basic)` is listed (containers → partial), and Bro is deployed on Vercel. `resume.md` drafted and rendered; 2 pages verified visually. Awaiting approval. Location still unconfirmed.
+- **18 Sep 2026** — Location confirmed Australian by Faraaz, resolving the visa blocker; the 485 applies. Resume rendered, committed and linked from the tracker. Remaining risk is fit, not eligibility: the role's owner/SME scope and the four unevidenced must-haves stand as recorded in § 2.
