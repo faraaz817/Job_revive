@@ -5,13 +5,16 @@ _build/package-lock.json
 # Old template resume — superseded by the tracked Base one, kept out of git.
 Faraaz_Mohammed_Resume.docx
 
-# Per-application tailored resumes stay local; base_resume.md and the Base .docx/.pdf are tracked
-# on purpose so employers/recruiters can find the current resume in this repo.
-applications/*/resume.md
-applications/*/*.docx
-applications/*/*.pdf
+# Tailored resumes and their renders ARE tracked, per application: the point of
+# this repo is that a finished resume has a permanent link you can open on a
+# phone, without a clone or a LibreOffice install. The tracker links each one.
+# The Markdown source is tracked alongside its PDF on purpose — when the source
+# and the artefact drift, the next re-render silently ships the stale one (that
+# is exactly how the "Artifcial" typo reached the published base resume).
 
-# Page-proof artefacts from _build/proof.sh. They carry the same contact details
-# as the final PDF, and proofing base_resume.md drops them at the repo root.
+# Page-proof scratch from _build/proof.sh: regenerated every run and superseded
+# by the named render that actually ships. Noise, not history.
 draft.docx
 draft.pdf
+applications/*/draft.docx
+applications/*/draft.pdf
