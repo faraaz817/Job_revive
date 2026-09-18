@@ -10,3 +10,8 @@ Faraaz_Mohammed_Resume.docx
 applications/*/resume.md
 applications/*/*.docx
 applications/*/*.pdf
+
+# Page-proof artefacts from _build/proof.sh. They carry the same contact details
+# as the final PDF, and proofing base_resume.md drops them at the repo root.
+draft.docx
+draft.pdf
