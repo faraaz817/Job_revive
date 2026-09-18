@@ -66,7 +66,7 @@ A rewrite, not a tailoring pass — the document argues a different case.
 
 ## 4. Status
 
-**Drafted and proofed — awaiting review.** 2 pages A4, page 2 at 53.5%, every bullet within limits, no stranded
+**Approved and rendered.** 2 pages A4, page 2 at 53.5%, every bullet within limits, no stranded
 headings, verified against the rendered pages.
 
 Two things are unresolved and both are Faraaz's:
@@ -79,3 +79,4 @@ Two things are unresolved and both are Faraaz's:
 - **18 Sep 2026** — Ad header captured; job description absent. Flagged to Faraaz that this is a recruitment and
   sales role rather than an engineering one; he chose to tailor for it. Resume rewritten to argue communication,
   stakeholder work and technical credibility. Drafted, proofed clean at 2 pages, awaiting approval.
+- **18 Sep 2026** — Approved by Faraaz. Final PDF and DOCX rendered and verified (2 pages, page 2 at 53.5%, no defects), tracker row added with status **Ready**. Not yet submitted.
