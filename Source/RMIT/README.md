@@ -26,5 +26,5 @@ Official academic records from **RMIT University**, City Campus, Melbourne — M
 
 - This is the official completion letter, not a full academic transcript (grades / WAM). Use it as proof of graduation dates and program title when an employer or visa process asks for confirmation of award.
 - The PDF is **encrypted** (AES; print allowed, copy/change restricted) and was produced via Apache FOP / iText. It opens without a user password in most viewers, but some upload portals reject `/Encrypt` dictionaries — see the unlock-pdf-encryption skill under `Claude_Skills/` if a portal refuses it.
-- Contains personal identifiers (full name, student number, registrar signature). Keep this folder out of any public repository.
+- Contains personal identifiers (full name, student number, registrar signature). Published here on purpose, so a recruiter can verify the award and dates directly.
 - Program details: [RMIT Program Guide](https://www.rmit.edu.au/students/my-course/program-course-information).

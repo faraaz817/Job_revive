@@ -59,4 +59,4 @@ Transcript page order: Sems 1–4, Sem 5, II‑II supply (Apr 2023), Sem 6, III�
 ## Notes
 
 - Both PDFs are **image-only scans** (OKEN Scanner) with no text layer — they are not searchable and text can't be copied out of them. Run OCR if you need extractable text.
-- These documents contain personal identifiers (full name, hall-ticket number, signatures, institute stamp). Keep this folder out of any public repository.
+- These documents contain personal identifiers (full name, hall-ticket number, signatures, institute stamp). They are published here on purpose, so a recruiter can verify the degree and dates directly.

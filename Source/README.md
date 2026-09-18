@@ -131,13 +131,6 @@ then, and only then, add a bullet to `base_resume.md` that cites it.
 
 ## Known issues / Limitations
 
-- **Sensitive material is in this folder.** `KMIT/` and `RMIT/` contain full name, student and
-  hall-ticket numbers, signatures and stamps — both of their READMEs say to keep them out of any
-  public repository. `Prodegee-main/weekly engagement and contribution - v1.docx` is a cohort
-  admin document. As of 19 September 2026 these are tracked in git and the repository is public;
-  either the files need to move out of the tree (and out of history) or the repository needs to
-  go private. This README does not resolve that — it records it. The restricted Prodegee
-  pipeline document has already been handled the first way: gitignored and purged from history.
 - **Three write-ups are not named `README.md`.** `Heart_disease/Hear_Disease.md` (note the
   typo), `published paper/Published Paper.md` and `Prodegee-main/Prodegee.md` are the README-
   equivalents of their folders. GitHub will not render them automatically on the folder page.
