@@ -4,6 +4,17 @@
 styled like the original template: A4, Calibri 10 pt body, navy `#1F3A5F` headings with a bottom
 rule, grey `#444444` meta text, right-tab dates. Single column, no tables — ATS-safe.
 
+**Font prerequisite.** The document is set in Calibri. If neither Calibri nor the
+metric-compatible **Carlito** is installed, LibreOffice silently substitutes a wider face
+(DejaVu Sans) and every line wraps early — the base resume renders as 3 pages instead of 2, and a
+page proof taken that way is worthless. Install Carlito before rendering, and check the
+substitution actually resolved:
+
+```bash
+sudo apt-get install -y fonts-crosextra-carlito && fc-cache -f
+fc-match Calibri        # must print Carlito (or Calibri), never DejaVu Sans
+```
+
 ```bash
 cd _build
 npm install                                   # once (installs docx)
