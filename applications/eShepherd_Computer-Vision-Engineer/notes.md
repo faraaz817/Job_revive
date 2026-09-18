@@ -96,7 +96,9 @@ Nothing added. Selection, reordering and rephrasing only.
 
 **Drafted and rendered — awaiting review.** `resume.md` is the file to edit; it is the exact input to the renderer.
 
-Render verified visually at 80 dpi, both pages: 2 pages A4, page 2 ~55% full, no stranded headings, no bullet split across the page break. Two three-line bullets remain on page 1 (the sensitivity bullet and the Prodegee Tools line); both were left because trimming them frees space that pulls the following bullet into a split across the page break — a worse defect than a short third line.
+Render verified visually at 80 dpi, both pages: 2 pages A4, page 2 ~52% full, every bullet at most 2 lines, no stranded headings, no bullet split across the page break.
+
+The first round of page proofs was invalid. Carlito was not installed in the render container, so LibreOffice substituted DejaVu Sans, which is materially wider than Calibri; bullets appeared to wrap to three lines when they do not. Content was trimmed to fix those phantom wraps, which left page 2 at ~40%. After installing `fonts-crosextra-carlito`, the trims were reverted and the Prodegee Mauritania/XGBoost bullet restored (7 bullets rather than the skill's 4–6 — the ad's "put mistakes on the table early" is evidenced literally by its self-flagged metric, and page 2 needs the content). The font prerequisite is now documented in `_build/README.md`.
 
 The fit blockers in § 1 stand and are unresolved:
 

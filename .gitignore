@@ -1,17 +1,12 @@
-# Resume documents — contain phone number, email, and other personal details
-Faraaz_Mohammed_Resume*.docx
-Faraaz_Mohammed_Resume*.pdf
-
 # Renderer dependencies
 _build/node_modules/
 _build/package-lock.json
 
-# Resume sources carry phone number and email — kept local only. Per application, jd.md and
-# notes.md are tracked (no contact details); resume.md and the rendered .docx/.pdf are not.
-base_resume.md
-applications/*/resume.md
+# Old template resume — superseded by the tracked Base one, kept out of git.
+Faraaz_Mohammed_Resume.docx
 
-# Render-check artefacts from the tailor-resume skill's page-proof step. Same
-# contact details as the final PDF, so they must not be tracked either.
-applications/*/draft.docx
-applications/*/draft.pdf
+# Per-application tailored resumes stay local; base_resume.md and the Base .docx/.pdf are tracked
+# on purpose so employers/recruiters can find the current resume in this repo.
+applications/*/resume.md
+applications/*/*.docx
+applications/*/*.pdf
