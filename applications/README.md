@@ -11,12 +11,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 2026-09-17 | eShepherd (Gallagher) | Computer Vision Engineer (Vision Weigh) | [PDF](eShepherd_Computer-Vision-Engineer/Faraaz_Mohammed_Resume_eShepherd_Computer-Vision-Engineer.pdf) | Australia (confirmed); city not stated, office-based |  | Not stated | Ready | [eShepherd_Computer-Vision-Engineer](eShepherd_Computer-Vision-Engineer/) | 2026-09-18 |
 | 2 | 2026-09-18 | Kaliba | Associate Consultant – Technology | [PDF](Kaliba_Associate-Consultant-Technology/Faraaz_Mohammed_Resume_Kaliba_Associate-Consultant-Technology.pdf) | Greater Melbourne, on-site | LinkedIn (Easy Apply) | Not stated | Ready | [Kaliba_Associate-Consultant-Technology](Kaliba_Associate-Consultant-Technology/) | 2026-09-18 |
+| 3 | 2026-09-18 | Suncorp Group | Associate Data Scientist | [PDF](Suncorp_Associate-Data-Scientist/Faraaz_Mohammed_Resume_Suncorp_Associate-Data-Scientist.pdf) | Melbourne / Brisbane / Sydney, hybrid | [LinkedIn](https://www.linkedin.com/jobs/view/4458049850/) | Not stated | Ready | [Suncorp_Associate-Data-Scientist](Suncorp_Associate-Data-Scientist/) | 2026-09-18 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-09-18** — Suncorp / Associate Data Scientist: resume approved and rendered despite soft flag on "at least two years of commercial experience" (~4 months internship vs $90–100k associate band). Preferred stack mostly gaps (Git/VS Code only). Status **Ready**.
 
 - **2026-09-18** — Kaliba / Associate Consultant – Technology: resume approved and rendered. A recruitment and sales role, not engineering — flagged before drafting and taken on knowingly; the resume argues communication, stakeholder work and technical credibility rather than engineering depth. Two caveats in `notes.md`: the ad's own requirements were never captured (tailored to the role type, not its criteria), and no recruitment or sales experience is claimed because there is none — that gap belongs in a cover letter.
 
