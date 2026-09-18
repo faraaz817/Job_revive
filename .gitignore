@@ -5,6 +5,10 @@ _build/package-lock.json
 # Old template resume — superseded by the tracked Base one, kept out of git.
 Faraaz_Mohammed_Resume.docx
 
+# Prodegee's cohort pipeline document: distribution restricted to participating
+# students and RMIT staff. Kept locally for context, never committed.
+Prodegee-restricted-do-not-publish/
+
 # Tailored resumes and their renders ARE tracked, per application: the point of
 # this repo is that a finished resume has a permanent link you can open on a
 # phone, without a clone or a LibreOffice install. The tracker links each one.

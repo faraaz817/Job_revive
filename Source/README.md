@@ -76,7 +76,7 @@ Reading order for someone new to the material:
 | `Prodegee-main/ds4-supporting-document-Prodegee.pdf` | Prodegee's brief for the DS4 problem. |
 | `Prodegee-main/tool-setup.md`, `tool-setup.html` | Cohort onboarding checklist (GitHub, Claude Code, QGIS, Zotero). |
 | `Prodegee-main/weekly engagement and contribution - v1.docx`, `Zotero Invite.pdf` | Cohort admin documents. |
-| `Prodegee-restricted-do-not-publish/` | Prodegee's *Project Pipeline — From Raw Data to Connection Points* (PDF + Markdown): the five-team pipeline, Kestra, flow maturity stages, week-by-week work plan. Explains where DS4 sat in the whole. **Distribution: participating students and RMIT staff only** — see Known issues. |
+| `Prodegee-restricted-do-not-publish/` | Prodegee's *Project Pipeline — From Raw Data to Connection Points* (PDF + Markdown): the five-team pipeline, Kestra, flow maturity stages, week-by-week work plan. Explains where DS4 sat in the whole. **Distribution: participating students and RMIT staff only** — gitignored, exists only on the local machine, and was purged from git history on 19 September 2026. |
 
 ## Timeline the folder reveals
 
@@ -100,8 +100,8 @@ Reading order for someone new to the material:
 - `Claude_Skills/` — the `costar` skill uses the `MGM_Prayer_Alerts/` requirements document as
   its worked example; the `unlock-pdf-encryption` skill exists because of PDFs like the one in
   `RMIT/`.
-- `Prodegee-restricted-do-not-publish/` is the cohort-wide context that `Prodegee-main/` assumes:
-  what "Branch D", "Stage 2", "Step 9" and "connection point" mean.
+- `Prodegee-restricted-do-not-publish/` (local only) is the cohort-wide context that
+  `Prodegee-main/` assumes: what "Branch D", "Stage 2", "Step 9" and "connection point" mean.
 - `Time_Flow/` mentions a `TimeFlowAndroid` Kotlin wrapper that is not public; the same author's
   Android work is evidenced by `MGM_Prayer_Alerts/` instead.
 - `Heart_disease/` is here so the decision to *exclude* it is documented, not just made.
@@ -133,12 +133,11 @@ then, and only then, add a bullet to `base_resume.md` that cites it.
 
 - **Sensitive material is in this folder.** `KMIT/` and `RMIT/` contain full name, student and
   hall-ticket numbers, signatures and stamps — both of their READMEs say to keep them out of any
-  public repository. `Prodegee-restricted-do-not-publish/` is marked by Prodegee as restricted to
-  participating students and RMIT staff. `Prodegee-main/weekly engagement and contribution -
-  v1.docx` is a cohort admin document. As of 19 September 2026 all of these are tracked in git
-  and the repository is public; either the files need to move out of the tree (and out of
-  history) or the repository needs to go private. This README does not resolve that — it records
-  it.
+  public repository. `Prodegee-main/weekly engagement and contribution - v1.docx` is a cohort
+  admin document. As of 19 September 2026 these are tracked in git and the repository is public;
+  either the files need to move out of the tree (and out of history) or the repository needs to
+  go private. This README does not resolve that — it records it. The restricted Prodegee
+  pipeline document has already been handled the first way: gitignored and purged from history.
 - **Three write-ups are not named `README.md`.** `Heart_disease/Hear_Disease.md` (note the
   typo), `published paper/Published Paper.md` and `Prodegee-main/Prodegee.md` are the README-
   equivalents of their folders. GitHub will not render them automatically on the folder page.
