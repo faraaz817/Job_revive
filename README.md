@@ -65,6 +65,7 @@ applicant-tracking systems parse cleanly.
 | `published paper/`, `Maize_Leaf_Disease_ML/` | The Quest JSES paper (Dec 2023) and the Canny-edge notebook behind its Canny row | Yes — Publication |
 | `Fire Detection/` | B.Tech capstone, OpenCV Haar cascade + WhatsApp alerting | Yes — one line |
 | `KMIT/` | Transcript and completion certificate | Dates only |
+| `RMIT/` | Statement of Academic Completion (MC271 Master of AI, completed Jul 2026) | Dates only |
 | `Heart_disease/` | Coursework notebook with a documented label leak and a degenerate test split | No — deliberately |
 
 ## Using it
