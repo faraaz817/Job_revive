@@ -4,6 +4,10 @@
 styled like the original template: A4, Calibri 10 pt body, navy `#1F3A5F` headings with a bottom
 rule, grey `#444444` meta text, right-tab dates. Single column, no tables — ATS-safe.
 
+**Use `proof.sh`, not these commands by hand.** `./proof.sh <resume.md>` runs the preflight
+below, renders, converts, measures the page geometry and rasterises the pages in one step.
+The manual commands are kept here for reference and debugging.
+
 **Font prerequisite.** The document is set in Calibri. If neither Calibri nor the
 metric-compatible **Carlito** is installed, LibreOffice silently substitutes a wider face
 (DejaVu Sans) and every line wraps early — the base resume renders as 3 pages instead of 2, and a
@@ -71,3 +75,15 @@ pdftoppm -jpeg -r 70 out.pdf /path/to/scratch/page      # then open page-1.jpg, 
 
 What to fix: any bullet on three lines, an orphaned last word, a heading stranded at the bottom of
 a page, a second page less than half full.
+
+## Scripts
+
+| Script | What it does |
+| --- | --- |
+| `render_resume.js` | Markdown → `.docx`, per the format above. |
+| `preflight.sh` | Verifies/installs node deps, LibreOffice **with its Writer module**, poppler, and the Calibri→Carlito resolution. Exits non-zero on a bad font, because a page proof taken with a substituted font is actively misleading. |
+| `proof.py` | Reads a rendered PDF's real text geometry (`pdftotext -bbox-layout`) and reports page count, last-page fill, over-long bullets, orphans, stranded headings and bullets split across the page break. Thresholds are constants at the top of the file. |
+| `proof.sh` | preflight → render → PDF → report → page images. The one to run. |
+
+See `.claude/skills/proof-resume/SKILL.md` for what each defect means and how to work the
+fix loop.

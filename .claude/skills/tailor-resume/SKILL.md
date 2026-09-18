@@ -8,6 +8,12 @@ description: Tailor Faraaz's resume to a specific Australian job ad and track th
 Workflow: **JD in → fit check → criteria map → `resume.md` draft → user reviews → approved → PDF → tracker updated.**
 The Markdown file the user approves is the exact input to the renderer, so what they read is what ships.
 
+**Run `_build/preflight.sh` first, before reading anything.** It verifies the render
+toolchain and — critically — that Calibri resolves to Calibri or Carlito. If it does not,
+LibreOffice substitutes a wider font, every page proof is wrong, and you will cut real
+content to fix wraps that do not exist. It takes seconds and it has already cost an hour
+once. See the `proof-resume` skill.
+
 Read these before drafting, every time:
 - `base_resume.md` — the complete inventory of sourced material. Every line in a tailored resume comes from here (or a project README under `Source/`). Nothing else. `Source/GitHub_Overview.md` indexes what each folder is.
 - `.claude/skills/tailor-resume/au-standards.md` — the Australian conventions and the bullet style. Follow it; it is why this skill exists.
@@ -54,13 +60,17 @@ Copy `base_resume.md` and cut it down. Rules, in priority order:
 ## 5. Render check — before showing the user
 
 ```bash
-cd _build && node render_resume.js "../applications/<dir>/resume.md" "../applications/<dir>/draft.docx" \
-  && soffice --headless --convert-to pdf "../applications/<dir>/draft.docx" --outdir "../applications/<dir>" >/dev/null 2>&1
-pdfinfo "applications/<dir>/draft.pdf" | grep Pages
-pdftoppm -jpeg -r 70 "applications/<dir>/draft.pdf" "<scratchpad>/<dir>"   # then Read the JPEGs
+_build/proof.sh "applications/<dir>/resume.md"
 ```
 
-Look at the pages. Fix any bullet that wraps to a third line, any orphan word, a page 2 under half full, or a heading stranded at the bottom of page 1. Repeat until clean. Delete `draft.docx`/`draft.pdf` afterwards; only the approved render stays.
+Preflight, render, PDF, a geometric defect report and the page images, in one command. Fix
+every defect it reports, re-run, and **then open the page images** — the report catches what
+is countable, your eyes catch what is ugly. The `proof-resume` skill explains each defect
+and how the fixes interact (trimming page 1 pulls content up and can split a bullet across
+the break; a thin page 2 is fixed by *adding* a bullet the criteria map justifies, not by
+shaving words elsewhere).
+
+Delete `draft.docx`/`draft.pdf` afterwards; only the approved render stays.
 
 ## 6. Present for review
 
@@ -108,6 +118,6 @@ applications/
 - No fabrication, ever. Rephrase, reorder, cut — never add.
 - The user's edits to `resume.md` win over the draft.
 - Nothing is rendered as final without an explicit approval.
-- Two pages maximum; verify by rendering, not by estimating.
+- Two pages maximum; verify with `_build/proof.sh`, not by estimating — and not by eye alone.
 - Australian English and Australian conventions per `au-standards.md`.
 - Report gaps and blockers plainly. A resume that hides a mismatch gets a rejection later instead of now; the tracker is for learning what works.
