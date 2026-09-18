@@ -10,3 +10,8 @@ _build/package-lock.json
 # notes.md are tracked (no contact details); resume.md and the rendered .docx/.pdf are not.
 base_resume.md
 applications/*/resume.md
+
+# Render-check artefacts from the tailor-resume skill's page-proof step. Same
+# contact details as the final PDF, so they must not be tracked either.
+applications/*/draft.docx
+applications/*/draft.pdf
