@@ -55,9 +55,10 @@ Yes, with eyes open on the dual-apply / "not production eng" contradiction. Draf
 
 ## 4. Status
 
-**Approved and rendered.** 2 pages A4, page 2 at 51.6%, no layout defects.
+**Applied.** 2 pages A4, page 2 at 51.6%, no layout defects.
 
 ## Log
 
+- **18 Sep 2026** — Applied. Status **Applied**.
 - **18 Sep 2026** — Approved. Rendered `Faraaz_Mohammed_Resume_Maincode_Talent-Engineer.pdf` / `.docx`. Status **Ready**.
 - **18 Sep 2026** — JD captured. Fit check: soft flags on dual Maincode apply (Back End already Applied) and "not production eng" career framing; no recruiting history. Criteria map written; `resume.md` drafted.

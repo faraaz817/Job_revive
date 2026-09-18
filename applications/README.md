@@ -15,13 +15,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 4 | 2026-09-18 | BCG X | Forward Deployed AI Engineer – Consulting (Graduate) | — | Perth / Sydney / Melbourne | [LinkedIn](https://www.linkedin.com/jobs/view/4455645312/) | Not stated | Withdrawn | [BCG-X_Forward-Deployed-AI-Engineer-Graduate](BCG-X_Forward-Deployed-AI-Engineer-Graduate/) | 2026-09-18 |
 | 5 | 2026-09-18 | Maincode | AI Software Engineer (Back End) | [PDF](Maincode_AI-Software-Engineer-Back-End/Faraaz_Mohammed_Resume_Maincode_AI-Software-Engineer-Back-End.pdf) | Melbourne, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4381552675/) | Not stated | Applied | [Maincode_AI-Software-Engineer-Back-End](Maincode_AI-Software-Engineer-Back-End/) | 2026-09-18 |
 | 6 | 2026-09-18 | pay.com.au | AI Solutions Engineer | [PDF](pay-com-au_AI-Solutions-Engineer/Faraaz_Mohammed_Resume_pay-com-au_AI-Solutions-Engineer.pdf) | Melbourne, hybrid (Windsor HQ) | [LinkedIn](https://www.linkedin.com/jobs/view/4442019029/) | Not stated | Ready | [pay-com-au_AI-Solutions-Engineer](pay-com-au_AI-Solutions-Engineer/) | 2026-09-18 |
-| 7 | 2026-09-18 | Maincode | Talent Engineer | [PDF](Maincode_Talent-Engineer/Faraaz_Mohammed_Resume_Maincode_Talent-Engineer.pdf) | Melbourne, hybrid | [LinkedIn](https://www.linkedin.com/jobs/view/4457474292/) | Not stated | Ready | [Maincode_Talent-Engineer](Maincode_Talent-Engineer/) | 2026-09-18 |
+| 7 | 2026-09-18 | Maincode | Talent Engineer | [PDF](Maincode_Talent-Engineer/Faraaz_Mohammed_Resume_Maincode_Talent-Engineer.pdf) | Melbourne, hybrid | [LinkedIn](https://www.linkedin.com/jobs/view/4457474292/) | Not stated | Applied | [Maincode_Talent-Engineer](Maincode_Talent-Engineer/) | 2026-09-18 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-09-18** — Maincode / Talent Engineer: applied. Status **Applied**.
 
 - **2026-09-18** — Maincode / Talent Engineer: resume approved and rendered. Soft flags — dual apply with Back End (already Applied); ad says "do not want production engineering to be your job"; no recruiting history. Status **Ready**.
 
