@@ -10,12 +10,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | # | Date | Company | Role | **Resume** | Location | Source | Closes | Status | Folder | Last update |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 2026-09-17 | eShepherd (Gallagher) | Computer Vision Engineer (Vision Weigh) | [PDF](eShepherd_Computer-Vision-Engineer/Faraaz_Mohammed_Resume_eShepherd_Computer-Vision-Engineer.pdf) | Australia (confirmed); city not stated, office-based |  | Not stated | Ready | [eShepherd_Computer-Vision-Engineer](eShepherd_Computer-Vision-Engineer/) | 2026-09-18 |
+| 2 | 2026-09-18 | Kaliba | Associate Consultant – Technology | [PDF](Kaliba_Associate-Consultant-Technology/Faraaz_Mohammed_Resume_Kaliba_Associate-Consultant-Technology.pdf) | Greater Melbourne, on-site | LinkedIn (Easy Apply) | Not stated | Ready | [Kaliba_Associate-Consultant-Technology](Kaliba_Associate-Consultant-Technology/) | 2026-09-18 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-09-18** — Kaliba / Associate Consultant – Technology: resume approved and rendered. A recruitment and sales role, not engineering — flagged before drafting and taken on knowingly; the resume argues communication, stakeholder work and technical credibility rather than engineering depth. Two caveats in `notes.md`: the ad's own requirements were never captured (tailored to the role type, not its criteria), and no recruitment or sales experience is claimed because there is none — that gap belongs in a cover letter.
 
 - **2026-09-18** — eShepherd / Computer Vision Engineer: **location confirmed Australian**, so the 485 applies and the visa blocker is closed. Resume rendered and linked from the Resume column. Status stays **Ready** — not yet submitted. Remaining risk is fit, not eligibility (see `notes.md` § 2).
 
