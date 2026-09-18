@@ -61,9 +61,10 @@ Yes. Soft flags only. Drafting.
 
 ## 4. Status
 
-**Approved and rendered.** 2 pages A4, page 2 at 53.0%, no layout defects.
+**Applied.** 2 pages A4, page 2 at 53.0%, no layout defects.
 
 ## Log
 
+- **18 Sep 2026** — Applied. Status **Applied**.
 - **18 Sep 2026** — Approved. Rendered `Faraaz_Mohammed_Resume_Maincode_AI-Software-Engineer-Back-End.pdf` / `.docx`. Status **Ready**.
 - **18 Sep 2026** — JD captured from pasted LinkedIn text + URL. Fit check: soft flags only (485 "unrestricted" wording; ~4 months vs "1–2 years"; high applicant volume; no production LLM serving at their scale). Criteria map written; `resume.md` drafted for review.

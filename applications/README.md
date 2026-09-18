@@ -13,13 +13,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 2 | 2026-09-18 | Kaliba | Associate Consultant – Technology | [PDF](Kaliba_Associate-Consultant-Technology/Faraaz_Mohammed_Resume_Kaliba_Associate-Consultant-Technology.pdf) | Greater Melbourne, on-site | LinkedIn (Easy Apply) | Not stated | Ready | [Kaliba_Associate-Consultant-Technology](Kaliba_Associate-Consultant-Technology/) | 2026-09-18 |
 | 3 | 2026-09-18 | Suncorp Group | Associate Data Scientist | [PDF](Suncorp_Associate-Data-Scientist/Faraaz_Mohammed_Resume_Suncorp_Associate-Data-Scientist.pdf) | Melbourne / Brisbane / Sydney, hybrid | [LinkedIn](https://www.linkedin.com/jobs/view/4458049850/) | Not stated | Ready | [Suncorp_Associate-Data-Scientist](Suncorp_Associate-Data-Scientist/) | 2026-09-18 |
 | 4 | 2026-09-18 | BCG X | Forward Deployed AI Engineer – Consulting (Graduate) | — | Perth / Sydney / Melbourne | [LinkedIn](https://www.linkedin.com/jobs/view/4455645312/) | Not stated | Withdrawn | [BCG-X_Forward-Deployed-AI-Engineer-Graduate](BCG-X_Forward-Deployed-AI-Engineer-Graduate/) | 2026-09-18 |
-| 5 | 2026-09-18 | Maincode | AI Software Engineer (Back End) | [PDF](Maincode_AI-Software-Engineer-Back-End/Faraaz_Mohammed_Resume_Maincode_AI-Software-Engineer-Back-End.pdf) | Melbourne, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4381552675/) | Not stated | Ready | [Maincode_AI-Software-Engineer-Back-End](Maincode_AI-Software-Engineer-Back-End/) | 2026-09-18 |
+| 5 | 2026-09-18 | Maincode | AI Software Engineer (Back End) | [PDF](Maincode_AI-Software-Engineer-Back-End/Faraaz_Mohammed_Resume_Maincode_AI-Software-Engineer-Back-End.pdf) | Melbourne, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4381552675/) | Not stated | Applied | [Maincode_AI-Software-Engineer-Back-End](Maincode_AI-Software-Engineer-Back-End/) | 2026-09-18 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-09-18** — Maincode / AI Software Engineer (Back End): applied. Status **Applied**.
 
 - **2026-09-18** — Maincode / AI Software Engineer (Back End): resume approved and rendered. Soft flags only — 485 vs "unrestricted work rights", ~4 months vs "1–2 years" production software, high applicant volume, no production LLM serving at their scale (ad says prior serving experience not required). Status **Ready**.
 
