@@ -50,9 +50,10 @@ Captured 18 Sep 2026. Full ad in `jd.md`.
 
 ## 4. Status
 
-**Approved and rendered.** 2 pages A4, page 2 at 51.1%, no layout defects.
+**Applied.** 2 pages A4, page 2 at 51.1%, no layout defects.
 
 ## Log
 
+- **18 Sep 2026** — Applied. Status **Applied**.
 - **18 Sep 2026** — Approved. Rendered `Faraaz_Mohammed_Resume_AEY_Robotics-Software-Engineer.pdf` / `.docx`. Status **Ready**.
 - **18 Sep 2026** — User confirmed Linux (already in base) and Master’s IoT course; IoT added to `base_resume.md`. Fit flags recorded; tailored despite mid-senior / robotics stretch on request.

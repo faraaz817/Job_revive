@@ -17,13 +17,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 6 | 2026-09-18 | pay.com.au | AI Solutions Engineer | [PDF](pay-com-au_AI-Solutions-Engineer/Faraaz_Mohammed_Resume_pay-com-au_AI-Solutions-Engineer.pdf) | Melbourne, hybrid (Windsor HQ) | [LinkedIn](https://www.linkedin.com/jobs/view/4442019029/) | Not stated | Ready | [pay-com-au_AI-Solutions-Engineer](pay-com-au_AI-Solutions-Engineer/) | 2026-09-18 |
 | 7 | 2026-09-18 | Maincode | Talent Engineer | [PDF](Maincode_Talent-Engineer/Faraaz_Mohammed_Resume_Maincode_Talent-Engineer.pdf) | Melbourne, hybrid | [LinkedIn](https://www.linkedin.com/jobs/view/4457474292/) | Not stated | Applied | [Maincode_Talent-Engineer](Maincode_Talent-Engineer/) | 2026-09-18 |
 | 8 | 2026-09-18 | Service Stream | IT Engineer Graduate (2027 Ignite) | — | Melbourne, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4464198036/) | 2026-10-04 | Withdrawn | [Service-Stream_IT-Engineer-Graduate](Service-Stream_IT-Engineer-Graduate/) | 2026-09-18 |
-| 9 | 2026-09-18 | AEY & Associates | Robotics Software Engineer | [PDF](AEY_Robotics-Software-Engineer/Faraaz_Mohammed_Resume_AEY_Robotics-Software-Engineer.pdf) | Sydney, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4456677999/) | Not stated | Ready | [AEY_Robotics-Software-Engineer](AEY_Robotics-Software-Engineer/) | 2026-09-18 |
+| 9 | 2026-09-18 | AEY & Associates | Robotics Software Engineer | [PDF](AEY_Robotics-Software-Engineer/Faraaz_Mohammed_Resume_AEY_Robotics-Software-Engineer.pdf) | Sydney, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4456677999/) | Not stated | Applied | [AEY_Robotics-Software-Engineer](AEY_Robotics-Software-Engineer/) | 2026-09-18 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-09-18** — AEY & Associates / Robotics Software Engineer: applied. Status **Applied**.
 
 - **2026-09-18** — AEY & Associates / Robotics Software Engineer: resume approved and rendered as a stretch (mid-senior $120–170k; no robotics/C++/K8s). IoT added to base Education; Linux already sourced. Status **Ready**.
 
