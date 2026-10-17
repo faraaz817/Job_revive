@@ -48,7 +48,7 @@ Kept below the mainframe evidence so the six-second scan still lands on z/OS/JCL
 ## 4. Open items
 
 - Adam Ring: phone / email not supplied.
-- Ashlee Jackson: title and organisation not supplied (email domain isi.com.au).
+- ~~Ashlee Jackson: title and organisation not supplied~~ — z/OS System Programmer, ISI (user, 17 Oct 2026).
 - **Public repo:** this repository is public. Committing the referee block publishes third-party
   contact details. Decide before approval what the committed version carries.
 
