@@ -36,6 +36,15 @@ citizenship. Check each ad before investing in it.
 - Certifications: IBM Z badges split into two lines with issue dates.
 - Referees: **named** (Adam Ring, IBM; Ashlee Jackson) instead of "Available on request", at the user's request.
 
+### AI additions (user request, 17 Oct 2026: "also add other AI relevant things")
+
+Kept below the mainframe evidence so the six-second scan still lands on z/OS/JCL first.
+- Profile: one clause on LLM tooling (MCP servers, QLoRA fine-tuning, Claude API model router).
+- Skills: full AI / ML line from the base restored; AI-assisted engineering line restored.
+- Prodegee: restored the XGBoost/Mauritania and Claude model-router bullets (now all 8); XGBoost and Claude Code back on the Tools line.
+- Key Projects: Bro chatbot and agent-skills lines restored.
+- Page 2 now ~70% full.
+
 ## 4. Open items
 
 - Adam Ring: phone / email not supplied.
@@ -46,3 +55,4 @@ citizenship. Check each ad before investing in it.
 ## Log
 
 - **2026-10-17** — Drafted against the role type (no ad). 2 pages, proof clean. Status **Draft**.
+- **2026-10-17** — AI content restored from base at user's request. 2 pages, proof clean.
