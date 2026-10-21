@@ -40,8 +40,8 @@ was submitted and verified with condition code 0000 — a clean run.
 
 ## Known issues / Limitations
 
-- **Introductory level.** Both badges are entry points. IBM Z 101 and AI on Z were on the to-do
-  list in the job-go roadmap (last updated 28 July 2026); there is no record of either since.
+- **Introductory level.** Both badges are entry points. IBM Z 101 and AI on Z are in progress
+  (as of 21 October 2026), not yet earned.
 - **The environment has no artefact.** There is no repo, screenshot or job log in this collection
   for the JCL run; the CC 0000 result is from the author's notes.
 - **Credly could not be opened from the session that wrote this**, so the verify links are built

@@ -64,6 +64,7 @@ Yes. Soft flags only. Strong match on MCPs, Claude, Python/TypeScript, APIs, pac
 
 ## Log
 
+- **21 Oct 2026** — Applied (reported by Faraaz; date of submission not given). Status **Applied**. Vayaa and the linked IBM badges were not added — the application had already gone.
 - **21 Oct 2026** — Time Flow entry replaced: the `time-flow-web` repo was made private (its Pages site went with it) and the app is now closed source (commercial). Dead links gone; entry now reads "Android, closed source — demo on request". Re-rendered PDF/DOCX, still 2 pages, no layout defects. Status unchanged (**Ready**).
 - **18 Sep 2026** — Cover letter drafted (`cover_letter.md`) and rendered to PDF/DOCX. Honest on automation-breadth and PII gaps; leads with MCP/skills, discovery, judgment.
 - **18 Sep 2026** — Approved. Rendered `Faraaz_Mohammed_Resume_pay-com-au_AI-Solutions-Engineer.pdf` / `.docx`. Status **Ready**.
