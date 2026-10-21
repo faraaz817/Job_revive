@@ -30,7 +30,7 @@ GitHub App was granted wider access later the same day.)
 | `My_Skills` | Original — 5 Claude Code / Cursor skills | **Supporting** — one line, not a project entry | [Claude_Skills](Claude_Skills/README.md) |
 | `faraaz817.github.io` | Original — personal portfolio site, plain HTML/CSS/JS | **Not a resume entry** — it *is* a link target; currently carries dead Time Flow links | — |
 | `Prodegee` | Private — the capstone workspace | Covered by the Experience entry, never linked | [Prodegee-main](Prodegee-main/Prodegee.md) |
-| `Vaya` | Private — website for Vaya, an IT & AI services company; React + TypeScript frontend, Rust (Axum) backend; README calls it an internship project; last pushed 11 Oct 2026 | **Not yet assessed** — no write-up, not on the resume | — |
+| `Vaya` | Private — the Vayaa company website (internship): React + TypeScript frontend, Rust (Axum) backend; 12 commits, 25 Sep – 5 Oct 2026 | **Resume — Experience entry** (Full-Stack Developer Intern, no link) | [Vayaa](Vayaa/README.md) |
 | `job-go` | Private — job-search workspace and the Bro chatbot (Next.js on Vercel) | Bro is on the resume; since 21 Oct 2026 it answers from this repo's `base_resume.md` and write-ups | — |
 | `claude-config`, `IDM`, `IOT-Ass1` | Private — agent config and RMIT coursework | Not reviewed | — |
 | `AI-p2` | RMIT COSC1127 assignment, Prolog | **Exclude — and make private (see below)** | — |

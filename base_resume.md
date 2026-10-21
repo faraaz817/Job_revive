@@ -4,20 +4,27 @@ Melbourne, VIC  •  0435 825 949  •  faraaz817@outlook.com
 _Full Australian working rights (Temporary Graduate visa, subclass 485) — no sponsorship required  •  Available immediately_
 
 ## Profile
-Master of Artificial Intelligence graduate (RMIT, 2026) with a B.Tech in IT and an AI/ML engineering internship
-delivering geospatial ML pipelines at national scale. Co-author of a peer-reviewed computer-vision paper.
-Works end to end — requirements, code, tests, review — across Python ML, Android (Kotlin) and web; built two Android
-apps (one in community use) and an MCP-based LLM tool in 2026. Seeking a graduate AI/ML or software engineering role anywhere in Australia.
+Master of Artificial Intelligence graduate (RMIT, 2026) with a B.Tech in IT; full-stack developer intern at Vayaa after
+an AI/ML engineering internship delivering geospatial ML pipelines at national scale. Co-author of a peer-reviewed
+computer-vision paper. Works end to end — requirements, code, tests, review — across Python ML, Rust, Android and web;
+built two Android apps and an MCP-based LLM tool in 2026. Seeking graduate AI/ML or software engineering roles across Australia.
 
 ## Technical Skills
-**Languages:** Python (primary), Kotlin, JavaScript, TypeScript, SQL, Prolog / ASP (Clingo), JCL, Bash
+**Languages:** Python (primary), Kotlin, JavaScript, TypeScript, Rust, SQL, Prolog / ASP (Clingo), JCL, Bash
 **AI / ML:** scikit-learn, XGBoost, OpenCV (image classification, edge detection, Haar cascades), evaluation design (precision/recall, IoU, sensitivity analysis, ground-truth construction), LLM fine-tuning (Unsloth, QLoRA, GGUF), Ollama, Answer Set Programming, prompt engineering, retrieval-grounded generation
 **Geospatial:** GeoPandas, Shapely, QGIS, PostGIS, Overture Maps, OpenStreetMap, GeoPackage / GeoJSON / Parquet
-**Software:** Android (Kotlin, AlarmManager, BroadcastReceiver, notification channels, Gradle KTS, JUnit), PWA (service workers, Web Notifications), Node.js, Next.js, Prisma, REST/JSON integration
+**Software:** Android (Kotlin, AlarmManager, BroadcastReceiver, notification channels, Gradle KTS, JUnit), Rust web APIs (Axum, Tokio, serde), React, PWA (service workers), Node.js, Next.js, Prisma, REST/JSON
 **AI-assisted engineering:** MCP servers, Claude Code (skills, hooks, subagents), Cursor, Anthropic API (prompt caching, routing)
 **Tooling & platforms:** Git / GitHub, Kestra, Docker (basic), Colab / Jupyter, Vercel, GitHub Pages, IBM z/OS + Zowe, Linux
 
 ## Experience
+### Full-Stack Developer Intern — Vayaa | Sep 2026 – present
+> Melbourne, VIC  ·  hybrid  ·  company website: React + TypeScript frontend, Rust (Axum) backend, Docker then AWS
+- Building the company's website from a mentor's brief; turned each plain-language request into numbered functional and non-functional requirements and kept a decision log (choice, alternatives, cost) for every design call.
+- Built the Rust backend's contact-enquiry API: server-side validation that reports every failed rule at once and converts raw input into a clean type, so only checked data can reach the database.
+- Capped request bodies at 16 KB so oversized payloads are refused before parsing, limited CORS to the frontend's origin, and verified the 200 / 400 / 413 / 422 paths with curl.
+> **Tools:** Rust, Axum, Tokio, serde, React 19, TypeScript, Vite, Git, Claude Code
+
 ### AI/ML Engineering Intern — Prodegee | Mar 2026 – Jun 2026
 > Remote, Melbourne  ·  RMIT industry capstone, Team DS4 — building-footprint inference for off-grid electrification planning
 - Designed and built the school-geolocation algorithm at the core of the team's pipeline (7.2M Overture building polygons, BFS spatial clustering, composite scoring); ran it on 18,121 schools in Côte d'Ivoire and ported it to Burundi and Chad.
@@ -36,7 +43,7 @@ apps (one in community use) and an MCP-based LLM tool in 2026. Seeking a graduat
 
 ## Education
 ### Master of Artificial Intelligence — RMIT University | Jul 2024 – Jul 2026
-> Melbourne, VIC  ·  Coursework: Intelligent Decision Making (ASP/Clingo), Computer Vision, Machine Learning, AI Systems Design, Internet of Things (IoT)
+> Melbourne, VIC  ·  Intelligent Decision Making (ASP/Clingo), Computer Vision, Machine Learning, AI Systems Design, IoT
 ### Bachelor of Technology (Information Technology) — Keshav Memorial Institute of Technology | Dec 2020 – May 2024
 > Hyderabad, India (affiliated to JNTUH)  ·  Coursework incl. Machine Learning, Neural Networks & Deep Learning, Data Mining
 
