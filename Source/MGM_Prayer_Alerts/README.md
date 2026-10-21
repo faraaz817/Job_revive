@@ -6,7 +6,8 @@ time in the notification. Per-prayer on/off toggles, per-prayer custom notificat
 nightly 3 AM refresh, and reboot recovery. No server, no account, no location — the mosque's
 published timetable is the single source of truth.
 
-Built for the MGM community, August 2026. Source at
+Built for the MGM community, August 2026; v1.0.0 on 4 August, redesign and CI in October
+(v1.1.0, v1.1.1). Source and APK releases at
 [github.com/faraaz817/MgmPrayerAlerts](https://github.com/faraaz817/MgmPrayerAlerts).
 
 ## Why
@@ -24,7 +25,8 @@ cites this document as its worked example.
 
 ## What it does
 
-- Pulls today's Azaan times from Awqat's Melbourne timetable and the mosque-specific Iqama config.
+- Pulls today's Azaan times from Awqat's Melbourne timetable and the mosque-specific Iqama config,
+  falling back to a bundled copy of the annual timetable when Awqat blocks the download (v1.1.1).
 - Shows Azaan + Jamaat for Fajr, Dhuhr, Asr, Maghrib, Isha; on Fridays also Jumu'ah #1 / #2 / #3.
 - Sunrise is parsed and displayed but is **never** a notification target.
 - Schedules an `AlarmManager` exact alarm at each enabled Azaan for the rest of today.
@@ -121,8 +123,8 @@ new one with the `FileProvider` URI and `USAGE_NOTIFICATION_EVENT` audio attribu
 | Concurrency | kotlinx-coroutines; `goAsync()` in receivers |
 | Scheduling | `AlarmManager.setExactAndAllowWhileIdle` |
 | Persistence | SharedPreferences + app-private files for sounds |
-| Tests | JUnit 4 — `TimeParseTest` |
-| Build | Gradle KTS, AGP; `gradlew assembleDebug` |
+| Tests | JUnit 4 — `TimeParseTest`, `AwqatScheduleParserTest` (7 tests) |
+| Build | Gradle KTS, AGP; `gradlew assembleDebug`; GitHub Actions (`build-apk.yml`) |
 
 Permissions: `INTERNET`, `POST_NOTIFICATIONS`, `SCHEDULE_EXACT_ALARM`, `RECEIVE_BOOT_COMPLETED`,
 `WAKE_LOCK`, `VIBRATE`. `USE_EXACT_ALARM` was deliberately dropped (Play policy).
@@ -158,6 +160,29 @@ checked before posting, ambiguous 12-hour display. Left open: moving the nightly
 `goAsync()` to `WorkManager` for slow-network resilience, and broader unit coverage of the
 parsing and Friday logic.
 
+## October 2026: redesign, CI and an outage
+
+**v1.1.0 (8 Oct) — redesign and releases.** The main screen was rebuilt around the next prayer:
+a live countdown with the Jamaat time, today's times as an aligned Azaan/Jamaat table (next
+prayer highlighted, finished ones dimmed), Jumu'ah sessions in their own card, and one switch
+per prayer instead of 24 always-visible buttons. Missing notification or exact-alarm permission
+and failed fetches now show as banners with a one-tap fix, and granting exact alarms reschedules
+on return. Edge-to-edge insets, enforced on Android 15+, had put the title under the status bar;
+fixed. GitHub Actions now runs the unit tests and builds the APK on every push, and a merge to
+`main` with a new `versionName` publishes release `v<version>` with the APK attached and notes
+taken from `CHANGELOG.md`.
+
+**v1.1.1 (10 Oct) — keeping the app working when its source broke.** Awqat began answering the
+app's timetable requests with a bot-check HTML page instead of the data. The repository now tries
+the live files, rejects anything that looks like an HTML challenge, and falls back to the annual
+Melbourne timetable bundled in the APK (the same schedule the mosque's site uses) and to the last
+good or bundled Iqama config. A new `AwqatScheduleParser` was split out of the repository with its
+own unit tests.
+
+The redesign and the release workflow were written in Claude Code sessions and the v1.1.1 fix with
+Cursor, under the author's direction (4 of 12 commits authored by Claude); the diagnosis, device
+testing and release were the author's.
+
 ## Install / build
 
 ```bat
@@ -185,5 +210,9 @@ three Jumu'ah targets appear.
 - **Battery optimisers.** Exact alarms survive Doze via `setExactAndAllowWhileIdle`, but
   aggressive OEM battery managers can still kill the app's receivers. Standard caveat for any
   alarm app.
-- **Debug build.** Distributed as a sideloaded debug APK to the community; not on the Play Store.
+- **Debug build.** Distributed as a sideloaded debug APK through GitHub Releases; not on the Play
+  Store. Unless the `DEBUG_KEYSTORE_BASE64` secret is set, each CI build is signed with a fresh
+  key, so updating means uninstalling first and losing toggles and custom sounds.
+- **Bundled timetable expires.** The v1.1.1 fallback is one year's timetable. If Awqat keeps
+  blocking the live files, the bundled copy has to be refreshed before it runs out.
 - iOS was specified in the requirements as a future platform with identical behaviour; not built.

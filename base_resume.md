@@ -6,8 +6,8 @@ _Full Australian working rights (Temporary Graduate visa, subclass 485) — no s
 ## Profile
 Master of Artificial Intelligence graduate (RMIT, 2026) with a B.Tech in IT and an AI/ML engineering internship
 delivering geospatial ML pipelines at national scale. Co-author of a peer-reviewed computer-vision paper.
-Works end to end — requirements, code, tests, review — across Python ML, Android (Kotlin) and web; shipped an Android
-app, an offline-first PWA and an MCP-based LLM tool in 2026. Seeking a graduate AI/ML or software engineering role anywhere in Australia.
+Works end to end — requirements, code, tests, review — across Python ML, Android (Kotlin) and web; built two Android
+apps (one in community use) and an MCP-based LLM tool in 2026. Seeking a graduate AI/ML or software engineering role anywhere in Australia.
 
 ## Technical Skills
 **Languages:** Python (primary), Kotlin, JavaScript, TypeScript, SQL, Prolog / ASP (Clingo), JCL, Bash
@@ -41,15 +41,16 @@ app, an offline-first PWA and an MCP-based LLM tool in 2026. Seeking a graduate 
 > Hyderabad, India (affiliated to JNTUH)  ·  Coursework incl. Machine Learning, Neural Networks & Deep Learning, Data Mining
 
 ## Key Projects
-### Time Flow — ADHD-focused planner (PWA) · JavaScript, Service Worker, Web Notifications, Kotlin bridge | Jul – Sep 2026
-- Built and deployed an installable, offline-first PWA (4,600 lines of vanilla JS, no framework or build step) that schedules goals, recurring targets and reminders into free minutes using an urgency × importance scoring model.
-- Implemented dual-timer focus sessions, weekly/monthly reminder scheduling and a cache-first service worker for system notifications; built a JS ↔ Kotlin bridge so the same code runs in a native Android wrapper with exact alarms.
-- Fixed input-focus loss under 1-second live re-renders with a targeted DOM-patch path instead of a full re-render.
-↳ Live: [faraaz817.github.io/time-flow-web](https://faraaz817.github.io/time-flow-web/)   ·   GitHub: [github.com/faraaz817/time-flow-web](https://github.com/faraaz817/time-flow-web)
+### Time Flow — ADHD-focused planner (Android, closed source) · JavaScript, Kotlin | Jul 2026 – present
+- Building an Android planner for commercial release that packs goals, recurring targets and reminders into free minutes by an urgency × importance score; 10 tagged releases, the latest shaped by tester feedback.
+- Vanilla-JS UI in a Kotlin WebView shell that owns exact alarms, reboot recovery and a foreground service keeping focus timers alive; started as an offline-first PWA.
+- Set up CI that builds a shrunk release APK and runs the Kotlin and JavaScript test suites on every PR; tagged releases are signed and checked with apksigner.
+↳ Closed source (in development for commercial release)  ·  demo on request
 
-### MGM Prayer Alerts — Android app for Melbourne Grand Mosque · Kotlin, Android 8–15, AlarmManager, JUnit | Aug 2026
+### MGM Prayer Alerts — Android app for Melbourne Grand Mosque · Kotlin, AlarmManager, JUnit | Aug – Oct 2026
 - Shipped an Android app that fetches the mosque's daily timetable, schedules exact Azaan alarms with per-prayer toggles and custom sounds, refreshes nightly and survives reboot; in use by community members.
 - Wrote functional requirements (scope, decision log, acceptance criteria) before coding, then reviewed the code against them: fixed a critical AM/PM storage bug and a refresh alarm that stopped re-arming; unit-tested time parsing.
+- When the timetable source began returning bot-check pages, kept alarms working by falling back to a bundled annual timetable behind a new unit-tested parser; added GitHub Actions to test, build and publish releases.
 ↳ GitHub: [github.com/faraaz817/MgmPrayerAlerts](https://github.com/faraaz817/MgmPrayerAlerts)
 
 ### Gemma Delegation System — local/cloud LLM hybrid · Node.js, MCP SDK, Ollama, Unsloth/QLoRA, Colab | May 2026

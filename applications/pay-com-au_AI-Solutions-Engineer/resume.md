@@ -71,10 +71,10 @@ role at pay.com.au, Melbourne.
   constraints; Anthropic API, deployed on Vercel.
 ↳ Live: [job-go-mauve.vercel.app/portfolio](https://job-go-mauve.vercel.app/portfolio)
 
-### Time Flow — ADHD-focused planner (PWA) · JavaScript, Service Worker | Jul – Sep 2026
-- Built and deployed an installable, offline-first PWA (4,600 lines of vanilla JS); fixed input-focus loss under
-  1-second live re-renders with a targeted DOM-patch path instead of a full re-render.
-↳ Live: [faraaz817.github.io/time-flow-web](https://faraaz817.github.io/time-flow-web/)   ·   GitHub: [github.com/faraaz817/time-flow-web](https://github.com/faraaz817/time-flow-web)
+### Time Flow — ADHD-focused planner (Android, closed source) · JavaScript, Kotlin | Jul 2026 – present
+- Building an Android planner for commercial release (vanilla-JS UI in a Kotlin shell); set up CI that runs the
+  Kotlin and JavaScript test suites on every PR and publishes signed, apksigner-checked releases.
+↳ Closed source (in development for commercial release)  ·  demo on request
 
 - **Fire Detection & Alerting System (B.Tech capstone, team of 4):** trained a custom OpenCV Haar cascade (Python) for real-time fire detection, chosen over heavier detectors for latency; a threaded pipeline raises an alarm and sends WhatsApp alerts to the nearest fire station.
 
