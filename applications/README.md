@@ -25,7 +25,7 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
 
-- **2026-10-21** — Time Flow went closed source and `time-flow-web` was removed, so its links are dead. pay.com.au (Ready, unsent) re-rendered without them. AEY, Maincode Back End and Maincode Talent Engineer were already submitted with the dead links and are left as sent — if asked, the app is closed source for commercial release and can be demoed.
+- **2026-10-21** — Time Flow went closed source and `time-flow-web` was made private, so its links are dead. pay.com.au (Ready, unsent) re-rendered without them. AEY, Maincode Back End and Maincode Talent Engineer were already submitted with the dead links and are left as sent — if asked, the app is closed source for commercial release and can be demoed.
 
 - **2026-09-18** — AEY & Associates / Robotics Software Engineer: applied. Status **Applied**.
 

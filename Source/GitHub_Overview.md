@@ -2,13 +2,15 @@
 
 First reviewed 17 September 2026 through the public API (public repos only). **Re-audited 21
 October 2026** with account access, which also shows the private repos. Profile: **Faraaz Abdul
-Khadeer Mohammed**, 16 public (including this one) and 2 private repos, account created September 2022.
+Khadeer Mohammed**, 16 public (including this one) and 8 private repos, account created September 2022.
+(The first pass of this re-audit saw only 2 private repos; the other 6 became visible once the Claude
+GitHub App was granted wider access later the same day.)
 
 ## What changed since 17 September
 
-- **`time-flow-web` is gone and Time Flow is now closed source.** The public PWA repo was removed
-  from GitHub after 17 September. The app now lives only in the private `time-flow` repo (Android,
-  v0.4.0), which is being developed for commercial release. Every link to `time-flow-web` — on the
+- **`time-flow-web` is now private and Time Flow is closed source.** The public PWA repo was made
+  private after 17 September (last pushed 7 October). Development continues in the private
+  `time-flow` repo (Android, v0.4.0), which is being built for commercial release. Every link to `time-flow-web` — on the
   resumes and on `faraaz817.github.io` — is dead. See [Time_Flow](Time_Flow/README.md).
 - **`MgmPrayerAlerts` gained CI, versioned releases, a redesign and an outage fix** (v1.1.0,
   v1.1.1, 7–10 October). See [MGM_Prayer_Alerts](MGM_Prayer_Alerts/README.md).
@@ -20,6 +22,7 @@ Khadeer Mohammed**, 16 public (including this one) and 2 private repos, account 
 
 | Repo | Type | Decision | Write-up |
 | --- | --- | --- | --- |
+| `time-flow-web` | **Private** since Sep/Oct 2026 — the original PWA, superseded by `time-flow` | Not linked | [Time_Flow](Time_Flow/README.md) |
 | `time-flow` | **Private, commercial.** Android app — WebView + vanilla JS UI, Kotlin native shell, CI and signed releases | **Resume, no link** — "closed source, demo on request" | [Time_Flow](Time_Flow/README.md) |
 | `MgmPrayerAlerts` | Original — Kotlin Android, requirements + code review + tests + CI releases | **Resume** | [MGM_Prayer_Alerts](MGM_Prayer_Alerts/README.md) |
 | `gemma-delegation-system` | Original — MCP server + Ollama + QLoRA fine-tune loop | **Resume** | [Gemma_Delegation_System](Gemma_Delegation_System/README.md) |
@@ -27,6 +30,9 @@ Khadeer Mohammed**, 16 public (including this one) and 2 private repos, account 
 | `My_Skills` | Original — 5 Claude Code / Cursor skills | **Supporting** — one line, not a project entry | [Claude_Skills](Claude_Skills/README.md) |
 | `faraaz817.github.io` | Original — personal portfolio site, plain HTML/CSS/JS | **Not a resume entry** — it *is* a link target; currently carries dead Time Flow links | — |
 | `Prodegee` | Private — the capstone workspace | Covered by the Experience entry, never linked | [Prodegee-main](Prodegee-main/Prodegee.md) |
+| `Vaya` | Private — website for Vaya, an IT & AI services company; React + TypeScript frontend, Rust (Axum) backend; README calls it an internship project; last pushed 11 Oct 2026 | **Not yet assessed** — no write-up, not on the resume | — |
+| `job-go` | Private — job-search workspace and the Bro chatbot (Next.js on Vercel) | Bro is on the resume; since 21 Oct 2026 it answers from this repo's `base_resume.md` and write-ups | — |
+| `claude-config`, `IDM`, `IOT-Ass1` | Private — agent config and RMIT coursework | Not reviewed | — |
 | `AI-p2` | RMIT COSC1127 assignment, Prolog | **Exclude — and make private (see below)** | — |
 | `rust-fundamentals` | Fork of alfredodeza's Rust bootcamp, 1 "Progress" commit | Exclude — a "currently learning Rust" line at most | — |
 | `paddocktimeseries` | Fork of johnburley3000, 0 own commits, 75 MB | Exclude | — |

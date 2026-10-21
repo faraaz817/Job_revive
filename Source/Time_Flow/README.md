@@ -11,7 +11,7 @@ Solo project, July 2026 – present, Melbourne. **Closed source:** the repositor
 there is no public link. A demo is available on request.
 
 > **This write-up is deliberately shallow.** `Job_revive` is a public repository. Until
-> September 2026 Time Flow was an open-source PWA (`time-flow-web`, since removed from GitHub) and this file
+> September 2026 Time Flow was an open-source PWA (`time-flow-web`, made private since) and this file
 > quoted its scheduler and data model. Those internals were removed on 21 October 2026 when the
 > app went closed-source. What remains is what an interviewer needs: what it does, how it is built,
 > and what was hard — not the code.
@@ -30,7 +30,7 @@ with an ordered queue that starts in one tap.
 | --- | --- | --- |
 | Jul – Sep 2026 | — | Built as an installable, offline-first **PWA** (`time-flow-web`, public, GitHub Pages): 4 600 lines of vanilla JS, no framework, service-worker notifications, and an optional `TimeFlowAndroid` bridge for a native wrapper. |
 | 28 Jul 2026 | v0.1.0 – v0.3.1 | Native **Android shell** started in a separate private repo: a WebView host around the same `web/` code, with Kotlin for exact alarms, boot resync and a foreground service that keeps focus timers running while minimised. Signed-release workflow. |
-| After 17 Sep 2026 | — | The PWA repository was removed from GitHub; the private Android repo became the only home of the app. |
+| After 17 Sep 2026 | — | The PWA repository was made private (last pushed 7 Oct 2026); the private Android repo is where the app is developed. |
 | 7 – 9 Oct 2026 | v0.3.2 – v0.3.4 | Two **tester-feedback** releases: one-tap free-time start, back-button and typing fixes, exact time's-up alarms on Android 13+, a live focus countdown, a free-time list that refills itself when a task is removed, alert tones with preview, greeting by name. |
 | 9 Oct 2026 | v0.4.0 | **Notify times and nudges:** reminders can alert at the time and/or minutes, hours or days before (up to five); recurring targets nudge at chosen times of day. |
 | 20 Oct 2026 | — | Architecture diagram of the WebView + web ship path. |
