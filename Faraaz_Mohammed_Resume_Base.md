@@ -69,9 +69,10 @@ assumed:
 - **AI/ML vs software-engineering lead** — resolved as a deliberate balanced hybrid, since the
   portfolio site itself lists both as target areas.
 - **Grades** — left off; mid-range undergrad CGPA and no verified postgrad GPA.
-- **Template-only items** (Bro chatbot, NeuroVisualZ, IBM Z badges, Smart India Hackathon, Vachan
+- **Template-only items** (Bro chatbot, NeuroVisualZ, Smart India Hackathon, Vachan
   Speakers Club, Taher Foundation, Amart Furniture) — kept verbatim on the user's confirmation,
-  since none of them has a README in this collection to verify against.
+  since none of them has a README in this collection to verify against. (The IBM Z badges and
+  toolchain were on this list until 21 October 2026; they now have `Source/IBM_Z/`.)
 
 ## Regenerating or tailoring
 
@@ -115,8 +116,8 @@ numbers, same sources — only phrasing, order and length changed:
   as of this write-up; the resume says Mar–Jun 2026. Align them before a recruiter cross-checks.
 - **GitHub profile hygiene not yet actioned.** `AI-p2` (should be private per its own RMIT
   template README) and six scratch repos are still public — see `Source/GitHub_Overview.md`.
-- **Six template items are unverified.** Bro, NeuroVisualZ, IBM Z toolchain + Credly badges, SIH,
-  Vachan Speakers Club and Taher Foundation have no README in this collection; they were kept on
+- **Five template items are unverified.** Bro, NeuroVisualZ, SIH, Vachan Speakers Club and Taher
+  Foundation have no README in this collection; they were kept on
   the user's word, not cross-checked against a source document the way everything else here was.
 - **"15,000-image dataset"** in the publication line is the paper's own published claim; the
   underlying notebook in this collection ran on 2,000 images (500 per class). Worth knowing before

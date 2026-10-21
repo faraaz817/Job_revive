@@ -76,7 +76,7 @@ built two Android apps and an MCP-based LLM tool in 2026. Seeking graduate AI/ML
 K. M. Asudaria, **M. F. Abdul Khadeer**, S. S. Rafai, K. S. Reddy. “A Comparative Study of Edge Detection Techniques to Identify Maize Leaf Diseases using Machine Learning.” _Quest Journal of Software Engineering and Simulation_, Vol. 9(12), pp. 43–51, Dec 2023 (ISSN 2321-3795, peer-reviewed). Benchmarked 5 edge-detection operators × 8 classifiers (40 combinations) as a lesion feature-extraction step on a 15,000-image, four-class maize dataset; best result Sobel + MLP at 94.75%. Implemented the Canny arm (OpenCV + scikit-learn, ten classifiers).  ↳ [questjournals.org/jses](http://www.questjournals.org/jses/archive.html)   ·   Code: [github.com/faraaz817/Machine_Learning](https://github.com/faraaz817/Machine_Learning)
 
 ## Certifications, Awards & Leadership
-- IBM Z Xplore – Concepts and IBM Z & LinuxONE Community Contributor – Level 1 (IBM digital badges via Credly, 2026).
+- IBM badges on Credly: [IBM Z Xplore – Concepts](https://www.credly.com/badges/d5509c0f-81fd-4e9e-9e02-8bb1f6f1d6bd) (May 2026)  ·  [IBM Z & LinuxONE Community Contributor – Level 1](https://www.credly.com/badges/19522c4d-306c-4e4f-8b1f-643aa1701d2a) (Aug 2026).
 - Smart India Hackathon delegate, Government of India (2022)  ·  Certificate of Publication, Quest Journals (2023).
 - Head, Vachan Speakers Club, KMIT (2022–23) — led public-speaking workshops, debates and communication seminars.
 - Volunteer fundraiser, Taher Foundation (2023).
