@@ -60,7 +60,7 @@ applicant-tracking systems parse cleanly.
 | Folder | Content | On the resume? |
 | --- | --- | --- |
 | `Prodegee-main/` | RMIT × Prodegee capstone — building-footprint inference for off-grid electrification; contributions doc, AI-workflow doc, supporting PDFs | Yes — the Experience entry |
-| `Time_Flow/`, `MGM_Prayer_Alerts/`, `Gemma_Delegation_System/` | 2026 solo projects: offline-first PWA, Kotlin Android app, MCP + Ollama delegation with a QLoRA fine-tune loop | Yes — Key Projects |
+| `Time_Flow/`, `MGM_Prayer_Alerts/`, `Gemma_Delegation_System/` | 2026 solo projects: two Kotlin Android apps (Time Flow is closed source), MCP + Ollama delegation with a QLoRA fine-tune loop | Yes — Key Projects |
 | `Claude_Skills/` | Five Claude Code / Cursor skills | Yes — one line |
 | `published paper/`, `Maize_Leaf_Disease_ML/` | The Quest JSES paper (Dec 2023) and the Canny-edge notebook behind its Canny row | Yes — Publication |
 | `Fire Detection/` | B.Tech capstone, OpenCV Haar cascade + WhatsApp alerting | Yes — one line |

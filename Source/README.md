@@ -53,8 +53,8 @@ Reading order for someone new to the material:
 | Folder | What it is | When | Where | Resume | Write-up |
 | --- | --- | --- | --- | --- | --- |
 | `Prodegee-main/` | RMIT × Prodegee WIL capstone, Team DS4 — building-footprint inference for off-grid electrification demand estimation. Three-stage school-geolocation algorithm (7.2M Overture polygons, 18,121 schools across Côte d'Ivoire, Burundi, Chad), sigmoid score normalisation across countries, ±20 % sensitivity harness that found a 90 % under-count, and a cost-proportional `model_router.py` for the governed Claude Code environment. Python (GeoPandas, Shapely, scikit-learn, XGBoost), Kestra, QGIS. | Mar–Jun 2026 | Melbourne | **Experience entry** | [Prodegee.md](Prodegee-main/Prodegee.md) → [contributions](Prodegee-main/README-faraaz-contributions.md), [AI workflow](Prodegee-main/README-faraaz-ai-workflow.md) |
-| `Time_Flow/` | ADHD-focused planner as an installable PWA. 4 600 lines of vanilla JS, no framework, no backend; urgency × importance greedy packer, period-aware urgency for recurring targets, dual-timer focus sessions, service-worker notifications, optional Kotlin `TimeFlowAndroid` bridge. Live on GitHub Pages. | Jul–Sep 2026 | Melbourne | Key Project | [README](Time_Flow/README.md) |
-| `MGM_Prayer_Alerts/` | Kotlin Android app for Melbourne Grand Mosque: fetches the day's timetable, schedules exact Azaan alarms with per-prayer toggles and custom channel sounds, 3 AM refresh, reboot recovery. Requirements document written before code; severity-ranked review found a critical AM/PM storage bug. Sideloaded to the community. | Aug 2026 | Melbourne | Key Project | [README](MGM_Prayer_Alerts/README.md) |
+| `Time_Flow/` | ADHD-focused planner, now an Android app in development for commercial release — **closed source, private repo, no public link**. Started as a public PWA (Jul–Sep 2026, since removed); now a vanilla-JS UI in a Kotlin WebView shell with exact alarms, reboot recovery and a focus foreground service. Urgency × importance packer, notify-ahead reminders and target nudges (v0.4.0), CI on every PR, signed tagged releases to testers. Write-up kept shallow on purpose because this repo is public. | Jul 2026 – present | Melbourne | Key Project (no link) | [README](Time_Flow/README.md) |
+| `MGM_Prayer_Alerts/` | Kotlin Android app for Melbourne Grand Mosque: fetches the day's timetable, schedules exact Azaan alarms with per-prayer toggles and custom channel sounds, 3 AM refresh, reboot recovery. Requirements document written before code; severity-ranked review found a critical AM/PM storage bug. Sideloaded to the community. October: redesign around the next prayer, GitHub Actions test/build/release, and a fallback to a bundled timetable when the source started returning bot-check pages (v1.1.1). | Aug – Oct 2026 | Melbourne | Key Project | [README](MGM_Prayer_Alerts/README.md) |
 | `Gemma_Delegation_System/` | Local/cloud hybrid: Gemma 4 E2B on Ollama behind a Node MCP server, so Claude Code / Cursor delegate lightweight tasks locally. Accept/reject feedback maintains a capability profile and curates a JSONL dataset; a Colab notebook QLoRA-fine-tunes on confirmed examples and exports GGUF back to Ollama. | May 2026 | Melbourne | Key Project | [README](Gemma_Delegation_System/README.md) |
 | `Claude_Skills/` | Five Claude Code / Cursor agent skills: CO-STAR requirements builder, better-way reviewer, Socratic tutor, skill sync, and a `pikepdf` CLI that strips `/Encrypt` from signed government PDFs. | Aug 2026 | Melbourne | One line | [README](Claude_Skills/README.md) |
 | `published paper/` | *A Comparative Study of Edge Detection Techniques to Identify Maize Leaf Diseases using Machine Learning*, Quest JSES 9(12), pp. 43–51, Dec 2023. Five edge operators × eight classifiers; best Sobel + MLP 94.75 %. Second author of four. Paper PDF and publication certificates. | Dec 2023 | KMIT, Hyderabad | Publication | [Published Paper.md](published%20paper/Published%20Paper.md) |
@@ -89,8 +89,10 @@ Reading order for someone new to the material:
 | Jul 2024 – Jul 2026 | Master of AI (MC271) | RMIT, Melbourne |
 | Mar – Jun 2026 | Prodegee capstone, Team DS4 | Melbourne |
 | May 2026 | Gemma delegation system | Melbourne |
-| Jul – Sep 2026 | Time Flow PWA | Melbourne |
+| Jul – Sep 2026 | Time Flow PWA (public) | Melbourne |
+| Jul 2026 – | Time Flow Android app (private, commercial) | Melbourne |
 | Aug 2026 | MGM Prayer Alerts; Claude skills | Melbourne |
+| Oct 2026 | MGM v1.1.x: redesign, CI releases, outage fix | Melbourne |
 
 ## How the folders relate
 
@@ -102,8 +104,8 @@ Reading order for someone new to the material:
   `RMIT/`.
 - `Prodegee-restricted-do-not-publish/` (local only) is the cohort-wide context that
   `Prodegee-main/` assumes: what "Branch D", "Stage 2", "Step 9" and "connection point" mean.
-- `Time_Flow/` mentions a `TimeFlowAndroid` Kotlin wrapper that is not public; the same author's
-  Android work is evidenced by `MGM_Prayer_Alerts/` instead.
+- `Time_Flow/` is the only project whose code cannot be shown: the repo is private for commercial
+  reasons. `MGM_Prayer_Alerts/` is the public evidence of the same Android and CI skills.
 - `Heart_disease/` is here so the decision to *exclude* it is documented, not just made.
 
 ## Conventions
@@ -141,8 +143,9 @@ then, and only then, add a bullet to `base_resume.md` that cites it.
   folders have one README each.
 - **The academic scans have no text layer.** Both KMIT PDFs are OKEN Scanner images; nothing in
   them is searchable or copyable without OCR.
-- **The public repos have no CI.** `GitHub_Overview.md` notes it: no GitHub Actions on any repo,
-  so "has tests" (MGM) and "deploys to Pages" (Time Flow) are manual facts, not enforced ones.
+- **Time Flow cannot be verified from a link.** Its repo is private (commercial). The write-up is
+  based on the private repo, read on 21 October 2026, and is deliberately kept at feature level;
+  earlier versions of it in this repo's history still quote the old public PWA's code.
 - **Coverage is complete for GitHub, partial for everything else.** Items on the base resume
   that came from the original template rather than a folder here (volunteering, club roles,
   badges) are kept on the author's word and have no write-up. If one of them is ever probed, this
