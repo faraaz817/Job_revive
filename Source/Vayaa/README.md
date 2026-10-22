@@ -1,120 +1,87 @@
 # Vayaa — company website (Full-Stack Developer Intern)
 
-Internship project: the public website for Vayaa, an IT & AI services company, built as a React +
-TypeScript frontend over a Rust (Axum) backend, to be containerised with Docker and then deployed to
-AWS. The backend's contact-enquiry API validates every request on the server, returns all errors at
-once, turns raw input into a clean type before anything can store it, and rejects bodies over 16 KB
-before parsing them. 12 commits across 9 logged sessions, 24 September – 5 October 2026; in progress.
+Internship project: the public website for Vayaa, an IT & AI services company. Built first with a
+Rust (Axum) backend, then — on the mentor's instruction — ported to **Python (FastAPI)** behind 50
+automated parity tests that passed against both backends before the Rust code was retired. Enquiries
+are stored in PostgreSQL, the whole site runs in Docker Compose, and on **22 October 2026 it went
+live on AWS** (CloudFront → load balancer → ECS Fargate → RDS PostgreSQL, built from one
+CloudFormation template), with an email alert for every new enquiry.
 
 Full-Stack Developer Intern, Vayaa · Melbourne, hybrid · September 2026 – present. Source:
-`faraaz817/Vaya` (**private**, so no public link). Re-built and re-tested for this write-up on
-21 October 2026.
+`faraaz817/Vayaa` (**private**; renamed from `Vaya` on 22 October 2026). Two branches matter: `main`
+is the frozen Rust version (to 5 October); `dev` is the Python version and everything since. The
+AWS deployment is switched off when not needed, so there is no public link.
 
 ## Why
 
 The brief came as plain-language requests from a mentor ("a functional website that could go live",
-"a contact enquiry form would be good") plus fixed constraints: React frontend, Rust backend, AWS
-hosting, and — from the supervisor — Docker first, AWS second. The mentor was explicit that the
-learning goal is the backend (Rust) and deployment (AWS); the frontend is secondary.
+"a contact enquiry form would be good") plus fixed constraints: React frontend, AWS hosting, Docker
+first and AWS second, and originally a Rust backend. The stated learning goal is the backend and
+deployment; the frontend is secondary.
 
-So the work is organised around being able to explain every choice, not only shipping it. Three
-living documents were set up in session 1 and kept current since:
+Every request was turned into a numbered requirement and every design choice into a decision record
+from session 1, and both were kept current:
 
-| File | What it holds |
+| File | What it holds (as of 22 October 2026) |
 | --- | --- |
-| `REQUIREMENTS.md` | Each request translated into a numbered requirement — 5 constraints (CON), 3 functional (FR), 3 non-functional (NFR) — with the plain-language origin quoted beside it and a status. |
-| `DECISIONS.md` | 7 decisions (D-001 – D-007), each with what was chosen, why, what was not picked, and the cost. |
-| `PROGRESS.md` | A dated log of every session: what was done, the concepts learned, what is next. |
+| `REQUIREMENTS.md` | 5 constraints, 3 functional and 4 non-functional requirements, each with its plain-language origin and a status. All functional ones and NFR-01 ("deployable to the public internet") are Done. |
+| `DECISIONS.md` | 16 decisions (D-001 – D-016): what was chosen, why, what wasn't, and the cost. |
+| `PROGRESS.md` | A dated log of 19 sessions: what was done, the concepts learned, what is next. |
+| `MIGRATION.md` | The Rust → Python plan: the behaviour contract, and a map of every Rust concept to its Python equivalent. |
 
-## How it works
+## How it got here
 
-```
-Browser ── React 19 + TypeScript (Vite)              http://localhost:5173
-   │         fetch() with types that mirror the backend's JSON
-   ▼
-Rust backend ── Axum on Tokio                        http://localhost:3000
-   ├─ CorsLayer          only the frontend's origin; GET + POST; Content-Type
-   ├─ DefaultBodyLimit   16 KB — bigger bodies get 413 before serde reads them
-   ├─ GET  /health       {"status":"ok"} — for the footer status light, later for Docker/AWS
-   └─ POST /api/contact  serde → ContactForm → validate() → Enquiry
-                           200 {"status":"received"}
-                           400 {"errors":[ every rule that failed ]}
-                           422 wrong JSON shape (serde, before our code runs)
-```
+| When | Phase | What happened |
+| --- | --- | --- |
+| 24 Sep – 5 Oct | Rust backend (`main`) | Axum on Tokio: `GET /health`, CORS limited to the frontend, `POST /api/contact` with server-side validation that returns every failed rule at once and produces a clean `Enquiry` type ("parse, don't validate"), and a 16 KB body limit that refuses oversized requests before parsing. |
+| 5 Oct | Port to Python (`dev`) | Instruction from a repo collaborator: more people who will read and extend the code know Python. **Parity tests first** — 50 black-box HTTP tests (routes, 404/405, CORS and preflight, every validation rule and boundary, the body limit including exactly-16 KB, 50 MB and chunked uploads) were run green against the Rust backend *before* any Python existed, then against both. Only then was Rust removed from `dev`. FastAPI + Pydantic + Uvicorn; the body limit became a hand-written ASGI middleware, because FastAPI has none. |
+| 5 – 11 Oct | Storage and Docker | PostgreSQL 18 in Docker Compose (port bound to the local machine only, data in a named volume); SQLAlchemy 2 (async) + asyncpg, with three database `CHECK` constraints repeating the key validation rules; tests run against a separate `vayaa_test` database. Then the whole site in Compose: database, backend, and an nginx frontend that proxies the API so the browser sees one origin. |
+| 11 Oct | AWS design | One image (React build served by FastAPI) and a CloudFormation template: CloudFront (HTTPS) → Application Load Balancer → ECS Fargate (0.5 vCPU / 1 GB) → private RDS PostgreSQL 17, database password in SSM Parameter Store. |
+| 21 – 22 Oct | Five deploys to live | See below. |
+| 22 Oct | Rename, alerts | Product, folders, databases, AWS names and repo renamed to one spelling, Vayaa, with the local data migrated. New enquiries trigger an SNS email; the app's role may publish to that one topic and nothing else. |
 
-**Validation is the backend's job.** React's `required` and `maxLength` are a convenience; anyone
-can skip them with DevTools or curl. `validate()` applies the rules in D-005 — name 1–100 and
-message 1–1000 characters after trimming, email and phone both optional but at least one required,
-email with `@` and `.` and at most 254 characters, phone an optional `+` then 8–15 digits — and
-collects every failure rather than stopping at the first, so a visitor fixes the form once.
+### The deploy, attempt by attempt
 
-**Parse, don't validate.** `validate()` returns `Result<Enquiry, Vec<String>>`. On success it
-produces a separate, cleaned `Enquiry` (trimmed, blank text turned into `None`), so only checked
-data can move on to the database step. Counting uses `.chars().count()`, not `.len()`, so a name
-like "José" is four characters, not five bytes.
-
-**Defence in depth.** The 16 KB body limit protects the JSON parser; `validate()` protects the
-data. A maximum valid enquiry is 2–4 KB, so the limit leaves headroom while making an oversized
-request cheap to refuse (D-006).
-
-**Architecture diagrams that can't drift.** Two interactive diagrams in `docs/architecture/` (the
-whole site, and inside `main.rs`) were generated with the Archify skill; every box links to the
-exact lines of code it describes, pinned to a commit, and the tool checks those links (D-007).
-
-### Verified on 21 October 2026
-
-Built with `cargo build` (Rust 1.97) and `npm run build` (TypeScript check + Vite bundle, both
-clean), then exercised against the running server:
-
-| Request | Result |
-| --- | --- |
-| `GET /health` | 200 `{"status":"ok"}` |
-| Valid enquiry, phone only | 200 `{"status":"received"}`; the cleaned `Enquiry` is printed |
-| No email and no phone | 400 — 1 error |
-| Blank name, bad email, bad phone | 400 — all 3 errors in one reply |
-| `"name": 42` | 422 — rejected by serde before `validate()` runs |
-| 100 KB body | 413 — rejected by the body limit before parsing |
-| `POST /health` | 405 |
-| CORS preflight from `localhost:5173` | allowed: `GET,POST`, `content-type` |
+| # | What failed | Fix |
+| --- | --- | --- |
+| 1 | RDS creation: 7-day backup retention exceeds the AWS Free plan's limit. | Retention `0` (a final snapshot is still taken if the stack is deleted). The same commit locked the load balancer to CloudFront's address range — it had been open to the internet. |
+| 2 | CloudFront refused: a new account must be verified before its first distribution. | AWS Support case; rollback cleaned up. |
+| 3 | Same CloudFront block — the case had never been picked up (the "Resolve case" button had been misread as its status). | Chased through Support. |
+| 4 | Block lifted (confirmed first with a disabled test distribution, in seconds instead of a 10-minute deploy). Everything was created, but the app crashed on every start: the RDS TLS certificate failed verification. | Service parked by hand so the stack didn't roll back; Amazon's RDS CA bundle baked into the image and the connection set to `verify-full` (encrypt *and* prove it is our database), with unknown TLS modes refused at startup. |
+| 5 | — | Live. Checked: health ok, homepage over HTTPS, blank form → 400, HTTP → HTTPS redirect, load balancer not reachable directly, a real enquiry → 200 and stored. |
 
 ## Stack
 
-| Layer | Choice | Decision |
-| --- | --- | --- |
-| Backend | Rust (2024 edition), Axum 0.8, Tokio, serde / serde_json, tower-http (CORS) | D-004: Axum over Actix-web — Tokio-native, simpler model than actors |
-| Frontend | React 19 + TypeScript, Vite | D-002 (types mirror the API contract), D-003 (static `dist/` suits S3 + CloudFront; Next.js would compete with the Rust server) |
-| Next | PostgreSQL via `sqlx` in Docker, then the containers on AWS | Phases 5–7 in `PROGRESS.md` |
-
-Code size: `backend/src/main.rs` 232 lines (heavily commented by design — the project rules make
-the code double as study material); `frontend/src/App.tsx` 502 lines.
+| Layer | Choice |
+| --- | --- |
+| Frontend | React 19 + TypeScript, Vite |
+| Backend (current) | Python 3.12, FastAPI, Pydantic, Uvicorn; SQLAlchemy 2 (async) + asyncpg; boto3 for SNS |
+| Backend (first version) | Rust (2024 edition), Axum, Tokio, serde, tower-http |
+| Data | PostgreSQL 18 locally, RDS PostgreSQL 17 on AWS |
+| Packaging | Docker, Docker Compose (local), one production image |
+| AWS | CloudFormation, CloudFront, Application Load Balancer, ECS Fargate, RDS, SSM Parameter Store, SNS, CloudWatch Logs, ECR |
+| Checks | 55 pytest tests (50 parity + storage + 4 alert tests), mypy, cfn-lint |
 
 ## Who did what
 
-All 12 commits are the author's, made with Claude Code as a pair programmer and tutor (the
-project's `CLAUDE.md` runs it in a teach-as-you-go mode). `PROGRESS.md` records the split
-honestly, and this is it:
+All commits are the author's, made with Claude Code working as a pair programmer and tutor (the
+project's `CLAUDE.md` runs it in a teach-as-you-go mode). The progress log records the split:
 
-- **Author:** the requirements, decision log and progress log; the `health()` handler; the
-  `ContactForm` struct; `validate()`'s name, message, email and at-least-one-contact rules; the
-  validation rulebook (designed together with Claude); testing with curl and the browser.
-- **Claude Code:** the phone-number rule and the blank-text clean-up inside `validate()`; the
-  React contact form and the tropical redesign (frontend is secondary per CON-04); the Archify
-  diagrams.
-- **Mentor / supervisor:** the constraints CON-01 – CON-05.
+- **Author:** the requirements, decision and progress logs; in the Rust version, the `health()`
+  handler, the `ContactForm` struct and most of `validate()`; the choices recorded in the decision
+  log (SQLAlchemy over raw SQL, Postgres over SQLite, SNS over SES, …); the AWS account setup, every
+  deploy, the Support case, and the live checks; reviewing the Python port at checkpoints.
+- **Claude Code:** the Python port itself ("Claude wrote the Python, porting his structure and
+  comments") and the React frontend and design. The rest of the code was also written in Claude Code
+  sessions under the author's direction; the log doesn't split it further.
+- **Mentor / collaborator:** the constraints, including the switch to Python.
 
 ## Known issues / Limitations
 
-- **Not live yet.** No database (enquiries are printed to the server terminal and lost on
-  restart), no Docker, no AWS. Phases 5–7 are still open; resume wording must say "building", not
-  "deployed".
-- **No automated tests.** `main.rs` has no `#[test]`; every behaviour above was checked by hand
-  with curl and a browser. `validate()` is a pure function and would be easy to unit-test.
-- **CORS is hard-coded to the dev origin** (`http://localhost:5173`); production needs the real
-  domain.
-- **Rules live in two places** — Rust and React's convenience limits — and are kept in sync by
-  hand (D-005 says so).
-- **The email check is deliberately minimal** (`@` and `.`); a real check needs a confirmation
-  email.
-- **Name spelling.** The company is Vayaa; the repo and the website's logo, title and copy spell
-  it "Vaya". Worth confirming with the supervisor before anything goes live.
-- **Private repository**, so a screener cannot verify any of this from a link.
+- **Not permanently online.** The AWS service is parked when not needed to save credits, and there is
+  no custom domain yet (so no branded email via SES; alerts come from SNS's no-reply address).
+- **Free-plan database settings.** Automatic backups are `0` days until the account is upgraded.
+- **The TLS-to-RDS path is only tested by a deploy;** local tests run without TLS.
+- **Frontend is secondary by design** and was largely written by Claude Code; resume claims should
+  lead with the backend and deployment.
+- **Private repository**, so none of this is verifiable from a link.

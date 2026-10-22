@@ -6,6 +6,11 @@ Khadeer Mohammed**, 16 public (including this one) and 8 private repos, account 
 (The first pass of this re-audit saw only 2 private repos; the other 6 became visible once the Claude
 GitHub App was granted wider access later the same day.)
 
+## What changed since 21 October (re-checked 22 October 2026)
+
+- **Vayaa:** repo renamed `Vaya` → `Vayaa`. New work is on `dev`: the backend was ported from Rust to Python (FastAPI) on 5 October behind 50 parity tests, then PostgreSQL, Docker Compose and a live AWS deployment on 22 October. `main` stays the Rust version on purpose. The Vayaa write-up and resume entry were rebuilt from `dev`.
+- **Time Flow:** new `apple` branch with an iOS shell (Swift `WKWebView`, 17 unit tests on an iOS simulator in CI, unsigned IPA per push). Not merged, not yet on a real iPhone.
+
 ## What changed since 17 September
 
 - **`time-flow-web` is now private and Time Flow is closed source.** The public PWA repo was made
@@ -23,14 +28,14 @@ GitHub App was granted wider access later the same day.)
 | Repo | Type | Decision | Write-up |
 | --- | --- | --- | --- |
 | `time-flow-web` | **Private** since Sep/Oct 2026 — the original PWA, superseded by `time-flow` | Not linked | [Time_Flow](Time_Flow/README.md) |
-| `time-flow` | **Private, commercial.** Android app — WebView + vanilla JS UI, Kotlin native shell, CI and signed releases | **Resume, no link** — "closed source, demo on request" | [Time_Flow](Time_Flow/README.md) |
+| `time-flow` | **Private, commercial.** Android app — WebView + vanilla JS UI, Kotlin native shell, CI and signed releases; `apple` branch adds an iOS (Swift) shell (in progress, Oct 2026) | **Resume, no link** — "closed source, demo on request" | [Time_Flow](Time_Flow/README.md) |
 | `MgmPrayerAlerts` | Original — Kotlin Android, requirements + code review + tests + CI releases | **Resume** | [MGM_Prayer_Alerts](MGM_Prayer_Alerts/README.md) |
 | `gemma-delegation-system` | Original — MCP server + Ollama + QLoRA fine-tune loop | **Resume** | [Gemma_Delegation_System](Gemma_Delegation_System/README.md) |
 | `Machine_Learning` | Original — notebook; the Canny row of the published paper | **Resume** (as the paper's code) | [Maize_Leaf_Disease_ML](Maize_Leaf_Disease_ML/README.md) |
 | `My_Skills` | Original — 5 Claude Code / Cursor skills | **Supporting** — one line, not a project entry | [Claude_Skills](Claude_Skills/README.md) |
 | `faraaz817.github.io` | Original — personal portfolio site, plain HTML/CSS/JS | **Not a resume entry** — it *is* a link target; currently carries dead Time Flow links | — |
 | `Prodegee` | Private — the capstone workspace | Covered by the Experience entry, never linked | [Prodegee-main](Prodegee-main/Prodegee.md) |
-| `Vaya` | Private — the Vayaa company website (internship): React + TypeScript frontend, Rust (Axum) backend; 12 commits, 25 Sep – 5 Oct 2026 | **Resume — Experience entry** (Full-Stack Developer Intern, no link) | [Vayaa](Vayaa/README.md) |
+| `Vayaa` (renamed from `Vaya`, 22 Oct 2026) | Private — the Vayaa company website (internship). `main` = frozen Rust (Axum) version; `dev` = Python (FastAPI) + PostgreSQL + Docker + AWS, live 22 Oct 2026; 43 commits | **Resume — Experience entry** (Full-Stack Developer Intern, no link) | [Vayaa](Vayaa/README.md) |
 | `job-go` | Private — job-search workspace and the Bro chatbot (Next.js on Vercel) | Bro is on the resume; since 21 Oct 2026 it answers from this repo's `base_resume.md` and write-ups | — |
 | `claude-config`, `IDM`, `IOT-Ass1` | Private — agent config and RMIT coursework | Not reviewed | — |
 | `AI-p2` | RMIT COSC1127 assignment, Prolog | **Exclude — and make private (see below)** | — |
