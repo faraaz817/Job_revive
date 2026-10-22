@@ -34,6 +34,7 @@ with an ordered queue that starts in one tap.
 | 7 – 9 Oct 2026 | v0.3.2 – v0.3.4 | Two **tester-feedback** releases: one-tap free-time start, back-button and typing fixes, exact time's-up alarms on Android 13+, a live focus countdown, a free-time list that refills itself when a task is removed, alert tones with preview, greeting by name. |
 | 9 Oct 2026 | v0.4.0 | **Notify times and nudges:** reminders can alert at the time and/or minutes, hours or days before (up to five); recurring targets nudge at chosen times of day. |
 | 20 Oct 2026 | — | Architecture diagram of the WebView + web ship path. |
+| 20 – 22 Oct 2026 | iOS (in progress) | **iOS shell** on the `apple` branch: a Swift `WKWebView` host for the same `web/` app, with a validated JS ↔ Swift bridge, local notifications for reminders, nudges, deadlines and timers (within iOS's 64-pending limit), and a native backup of local storage because iOS can purge WebView data. CI on a macOS runner runs 17 unit tests on an iOS simulator and builds an unsigned IPA on every push. App Store prep done in code: privacy manifest, fonts bundled so the app makes no network requests. Not yet tested on a real iPhone or submitted. |
 
 ## How it works
 
@@ -95,14 +96,17 @@ reboot, background timers). Data is local-only (WebView storage); no accounts, n
 
 Solo product. Since July 2026 the code has been written with AI coding agents (Claude Code and
 Cursor) under the author's direction: 8 of 32 commits are authored by Claude sessions and merged
-through PRs, the rest by the author. Product decisions, the spec, testing on devices and the
-tester feedback loop are the author's.
+through PRs, the rest by the author. The iOS shell (5 commits on `apple`, October 2026) was written
+entirely in Claude Code sessions. Product decisions, the spec, testing on devices and the tester
+feedback loop are the author's.
 
 ## Known issues / Limitations
 
 - **No public evidence.** A screener cannot verify any of this from a link. Resumes describe it as
   closed-source and offer a demo; that is the honest position and it should stay that way.
-- **Android only.** The PWA build that ran on iPhone was retired with the public repo.
+- **iOS is not shipped.** The iOS shell builds and passes its tests in CI, but has not run on a real
+  iPhone, there is no signed TestFlight workflow, and a WebView-based app risks App Store Guideline 4.2
+  (minimum functionality).
 - **Sideload only.** Not on the Play Store; testers allow installs from unknown sources.
 - **Single device.** Local storage only — no sync or export. Uninstalling clears everything.
 - **One large file.** `app.js` is ~6 600 lines; splitting it into modules is an open follow-up.

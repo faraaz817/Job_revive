@@ -6,24 +6,24 @@ _Full Australian working rights (Temporary Graduate visa, subclass 485) — no s
 ## Profile
 Master of Artificial Intelligence graduate (RMIT, 2026) with a B.Tech in IT; full-stack developer intern at Vayaa after
 an AI/ML engineering internship delivering geospatial ML pipelines at national scale. Co-author of a peer-reviewed
-computer-vision paper. Works end to end — requirements, code, tests, review — across Python ML, Rust, Android and web;
+computer-vision paper. Works end to end — requirements, code, tests, review — across Python, Rust, Android, web and AWS;
 built two Android apps and an MCP-based LLM tool in 2026. Seeking graduate AI/ML or software engineering roles across Australia.
 
 ## Technical Skills
 **Languages:** Python (primary), Kotlin, JavaScript, TypeScript, Rust, SQL, Prolog / ASP (Clingo), JCL, Bash
 **AI / ML:** scikit-learn, XGBoost, OpenCV (image classification, edge detection, Haar cascades), evaluation design (precision/recall, IoU, sensitivity analysis, ground-truth construction), LLM fine-tuning (Unsloth, QLoRA, GGUF), Ollama, Answer Set Programming, prompt engineering, retrieval-grounded generation
 **Geospatial:** GeoPandas, Shapely, QGIS, PostGIS, Overture Maps, OpenStreetMap, GeoPackage / GeoJSON / Parquet
-**Software:** Android (Kotlin, AlarmManager, BroadcastReceiver, notification channels, Gradle KTS, JUnit), Rust web APIs (Axum, Tokio, serde), React, PWA (service workers), Node.js, Next.js, Prisma, REST/JSON
+**Software:** Android (Kotlin, AlarmManager, BroadcastReceiver, notification channels, Gradle KTS, JUnit), web APIs (FastAPI, Rust/Axum), PostgreSQL (SQLAlchemy), React, PWA, Node.js, Next.js, Prisma, REST/JSON
 **AI-assisted engineering:** MCP servers, Claude Code (skills, hooks, subagents), Cursor, Anthropic API (prompt caching, routing)
-**Tooling & platforms:** Git / GitHub, Kestra, Docker (basic), Colab / Jupyter, Vercel, GitHub Pages, IBM z/OS + Zowe, Linux
+**Tooling & platforms:** Git / GitHub, Docker, AWS (CloudFormation, Fargate, RDS, CloudFront, SNS), Kestra, Colab, Vercel, Linux
 
 ## Experience
 ### Full-Stack Developer Intern — Vayaa | Sep 2026 – present
-> Melbourne, VIC  ·  hybrid  ·  company website: React + TypeScript frontend, Rust (Axum) backend, Docker then AWS
+> Melbourne, VIC  ·  hybrid  ·  company website: React + TypeScript, Python (FastAPI) + PostgreSQL, deployed on AWS
 - Building the company's website from a mentor's brief; turned each plain-language request into numbered functional and non-functional requirements and kept a decision log (choice, alternatives, cost) for every design call.
-- Built the Rust backend's contact-enquiry API: server-side validation that reports every failed rule at once and converts raw input into a clean type, so only checked data can reach the database.
-- Capped request bodies at 16 KB so oversized payloads are refused before parsing, limited CORS to the frontend's origin, and verified the 200 / 400 / 413 / 422 paths with curl.
-> **Tools:** Rust, Axum, Tokio, serde, React 19, TypeScript, Vite, Git, Claude Code
+- Built the contact-enquiry API in Rust (server-side validation, clean types), then led its port to Python (FastAPI) on the mentor's call, gating the cutover on 50 parity tests passing against both backends.
+- Took it live on AWS with CloudFormation (CloudFront → ECS Fargate → RDS PostgreSQL) in five attempts, fixing Free-plan limits, a CloudFront account block and RDS TLS (verify-full); SNS emails each enquiry.
+> **Tools:** Python, FastAPI, SQLAlchemy, PostgreSQL, Docker, AWS, Rust (Axum), React, TypeScript, Claude Code
 
 ### AI/ML Engineering Intern — Prodegee | Mar 2026 – Jun 2026
 > Remote, Melbourne  ·  RMIT industry capstone, Team DS4 — building-footprint inference for off-grid electrification planning
@@ -50,7 +50,7 @@ built two Android apps and an MCP-based LLM tool in 2026. Seeking graduate AI/ML
 ## Key Projects
 ### Time Flow — ADHD-focused planner (Android, closed source) · JavaScript, Kotlin | Jul 2026 – present
 - Building an Android planner for commercial release that packs goals, recurring targets and reminders into free minutes by an urgency × importance score; 10 tagged releases, the latest shaped by tester feedback.
-- Vanilla-JS UI in a Kotlin WebView shell that owns exact alarms, reboot recovery and a foreground service keeping focus timers alive; started as an offline-first PWA.
+- Vanilla-JS UI in a Kotlin WebView shell that owns exact alarms, reboot recovery and a foreground service keeping focus timers alive; iOS (Swift) shell in progress.
 - Set up CI that builds a shrunk release APK and runs the Kotlin and JavaScript test suites on every PR; tagged releases are signed and checked with apksigner.
 ↳ Closed source (in development for commercial release)  ·  demo on request
 
