@@ -36,3 +36,4 @@ Yes — user chose to apply anyway (6 Nov 2026). Years of experience are not inf
 - Vayaa cut to 2 bullets (production Python/FastAPI, AWS). Prodegee: 8 bullets kept, reordered eval-first; handoff-memo clause dropped.
 - Key Projects: Gemma (tokens/fine-tune-from-usage framing), Bro, Agent skills, Fire Detection. Time Flow, MGM, NeuroVisualZ, IBM Z dropped. Education moved below projects.
 - Certifications trimmed to 2 lines.
+- **2026-11-06** — Cover letter drafted (`cover_letter.md`) and rendered to PDF/DOCX (1 page). States the experience gap plainly; leads with evaluation, cost/fine-tuning loop, retrieval.
