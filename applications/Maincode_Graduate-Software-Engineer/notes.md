@@ -33,3 +33,15 @@ Notes:
 
 ## Log
 - **2026-11-06** — JD captured; drafted; proofed (2 pages, no defects, page 2 58%); rendered `Faraaz_Mohammed_Resume_Maincode_Graduate-Software-Engineer.pdf`. Status **Ready**.
+
+## 4. Form answer — "Tell us how you can help" (paste-ready)
+
+Research used (6 Nov 2026): maincode.com — Matilda trained on Maincode-owned GPUs in Australian data centres; inference and training run on own infrastructure (also stated in the ad). Unverified aggregator claims (beta date, open weights, budget figures) deliberately not used.
+
+> Matilda is trained and served on your own GPUs, so the layer between the model and the people using it is yours to get right. That layer is where I can help first: the inference services, the evaluation that tells you whether a new checkpoint is actually better, and the tooling around both.
+>
+> That is the work I have done so far. At Prodegee (AI/ML internship) I built the evaluation harnesses that found what was really wrong: an IoU harness traced three failing generators to an over-scoped upstream cluster, and a sensitivity harness found the parameter behind a 90% under-count. I also built a Claude API router that sends each request to the cheapest model that can handle it. On my own time I built an MCP server that serves a locally fine-tuned Gemma model through Ollama, falls back to a frontier model when the local one is down, and turns user accept/reject feedback into the next QLoRA training set.
+>
+> At Vayaa I am currently taking a Python (FastAPI) and PostgreSQL service live on AWS, with the switch-over gated on 50 parity tests passing against both the old and new back ends.
+>
+> I would rather build Australian AI than integrate someone else's API. I am in Melbourne, can start immediately and have full working rights. I have also applied for the AI Software Engineer (Back End) role; this graduate role is the one that fits where I am now.
