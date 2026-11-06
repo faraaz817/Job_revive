@@ -20,12 +20,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 9 | 2026-09-18 | AEY & Associates | Robotics Software Engineer | [PDF](AEY_Robotics-Software-Engineer/Faraaz_Mohammed_Resume_AEY_Robotics-Software-Engineer.pdf) | Sydney, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4456677999/) | Not stated | Applied | [AEY_Robotics-Software-Engineer](AEY_Robotics-Software-Engineer/) | 2026-09-18 |
 | 10 | 2026-11-06 | ProFound People (recruiter; client undisclosed AI startup) | Machine Learning Engineer (Applied LLMs) | [PDF](ProFound-People_Machine-Learning-Engineer/Faraaz_Mohammed_Resume_ProFound-People_Machine-Learning-Engineer.pdf) | Sydney, hybrid | LinkedIn | Not stated | Ready | [ProFound-People_Machine-Learning-Engineer](ProFound-People_Machine-Learning-Engineer/) | 2026-11-06 |
 | 11 | 2026-11-06 | Shield AI | Engineer II, Deep Learning (R5178) | [PDF](Shield-AI_Engineer-II-Deep-Learning/Faraaz_Mohammed_Resume_Shield-AI_Engineer-II-Deep-Learning.pdf) | Melbourne, on-site | LinkedIn | Not stated | Ready | [Shield-AI_Engineer-II-Deep-Learning](Shield-AI_Engineer-II-Deep-Learning/) | 2026-11-06 |
+| 12 | 2026-11-06 | Maincode | Graduate Software Engineer | [PDF](Maincode_Graduate-Software-Engineer/Faraaz_Mohammed_Resume_Maincode_Graduate-Software-Engineer.pdf) | Melbourne, on-site | LinkedIn | Not stated | Ready | [Maincode_Graduate-Software-Engineer](Maincode_Graduate-Software-Engineer/) | 2026-11-06 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-11-06** — Maincode / Graduate Software Engineer: rendered, status **Ready**. Third Maincode application (Back End and Talent Engineer applied 18 Sep, no response logged).
 
 - **2026-11-06** — Shield AI / Engineer II, Deep Learning: rendered, status **Ready**. Core gap: no CNN/transformer vision or PyTorch/TensorFlow evidence.
 
