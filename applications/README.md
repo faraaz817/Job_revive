@@ -23,12 +23,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 12 | 2026-11-06 | Maincode | Graduate Software Engineer | [PDF](Maincode_Graduate-Software-Engineer/Faraaz_Mohammed_Resume_Maincode_Graduate-Software-Engineer.pdf) | Melbourne, on-site | LinkedIn | Not stated | Ready | [Maincode_Graduate-Software-Engineer](Maincode_Graduate-Software-Engineer/) | 2026-11-06 |
 | 13 | 2026-11-06 | Capgemini | IT Analyst Intern – AI and Software (2026/27 Summer Internship, ref 575576) | [PDF](Capgemini_IT-Analyst-Intern-AI-Software/Faraaz_Mohammed_Resume_Capgemini_IT-Analyst-Intern-AI-Software.pdf) | Melbourne / Sydney | Capgemini careers | Not stated | Ready | [Capgemini_IT-Analyst-Intern-AI-Software](Capgemini_IT-Analyst-Intern-AI-Software/) | 2026-11-06 |
 | 14 | 2026-11-06 | ISS Facility Services ANZ | AI Developer (AI Centre of Excellence) | [PDF](ISS_AI-Developer/Faraaz_Mohammed_Resume_ISS_AI-Developer.pdf) | Melbourne CBD or Sydney (Macquarie Park), hybrid | LinkedIn | Not stated | Ready | [ISS_AI-Developer](ISS_AI-Developer/) | 2026-11-06 |
+| 15 | 2026-11-06 | One51 | AI Engineer | [PDF](One51_AI-Engineer/Faraaz_Mohammed_Resume_One51_AI-Engineer.pdf) | Greater Sydney, hybrid | LinkedIn | Not stated | Ready | [One51_AI-Engineer](One51_AI-Engineer/) | 2026-11-06 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-11-06** — One51 / AI Engineer: resume + cover letter rendered, status **Ready**. Gaps: 3+ yrs (ad welcomes emerging professionals), Fabric/Azure/Databricks/Snowflake.
 
 - **2026-11-06** — ISS / AI Developer: rendered, status **Ready**. Gap: Microsoft AI stack (Copilot Studio, Power Platform, Azure).
 
