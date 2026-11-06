@@ -22,12 +22,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 11 | 2026-11-06 | Shield AI | Engineer II, Deep Learning (R5178) | [PDF](Shield-AI_Engineer-II-Deep-Learning/Faraaz_Mohammed_Resume_Shield-AI_Engineer-II-Deep-Learning.pdf) | Melbourne, on-site | LinkedIn | Not stated | Ready | [Shield-AI_Engineer-II-Deep-Learning](Shield-AI_Engineer-II-Deep-Learning/) | 2026-11-06 |
 | 12 | 2026-11-06 | Maincode | Graduate Software Engineer | [PDF](Maincode_Graduate-Software-Engineer/Faraaz_Mohammed_Resume_Maincode_Graduate-Software-Engineer.pdf) | Melbourne, on-site | LinkedIn | Not stated | Ready | [Maincode_Graduate-Software-Engineer](Maincode_Graduate-Software-Engineer/) | 2026-11-06 |
 | 13 | 2026-11-06 | Capgemini | IT Analyst Intern – AI and Software (2026/27 Summer Internship, ref 575576) | [PDF](Capgemini_IT-Analyst-Intern-AI-Software/Faraaz_Mohammed_Resume_Capgemini_IT-Analyst-Intern-AI-Software.pdf) | Melbourne / Sydney | Capgemini careers | Not stated | Ready | [Capgemini_IT-Analyst-Intern-AI-Software](Capgemini_IT-Analyst-Intern-AI-Software/) | 2026-11-06 |
+| 14 | 2026-11-06 | ISS Facility Services ANZ | AI Developer (AI Centre of Excellence) | [PDF](ISS_AI-Developer/Faraaz_Mohammed_Resume_ISS_AI-Developer.pdf) | Melbourne CBD or Sydney (Macquarie Park), hybrid | LinkedIn | Not stated | Ready | [ISS_AI-Developer](ISS_AI-Developer/) | 2026-11-06 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-11-06** — ISS / AI Developer: rendered, status **Ready**. Gap: Microsoft AI stack (Copilot Studio, Power Platform, Azure).
 
 - **2026-11-06** — Capgemini / IT Analyst Intern – AI and Software: rendered, status **Ready**. Ad requires current enrolment (penultimate/final year); Faraaz graduated Jul 2026.
 
