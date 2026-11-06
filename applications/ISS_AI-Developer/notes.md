@@ -39,3 +39,4 @@ Notes (not stops):
 
 ## Log
 - **2026-11-06** — JD captured; drafted; proofed (2 pages, no defects, page 2 55%); rendered `Faraaz_Mohammed_Resume_ISS_AI-Developer.pdf`. Status **Ready**.
+- **2026-11-06** — Cover letter drafted (`cover_letter.md`) and rendered to PDF/DOCX (1 page). States the Microsoft-stack gap plainly.
