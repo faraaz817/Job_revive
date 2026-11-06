@@ -31,8 +31,8 @@ Folder name: `<Company>_<Role>` — spaces to hyphens inside each part, letters/
 
 Read the ad for the blockers in `au-standards.md` § Fit check. Report them in the reply and in `notes.md`:
 
-- **Hard blockers** (citizenship/PR required, security clearance, 3+ years' experience stated as mandatory, closing date passed): stop, tell the user plainly, and ask whether to continue. Do not silently tailor a resume for a role that will auto-reject.
-- **Soft flags** (location outside Melbourne with no remote/relocation mention, "future sponsorship" wording, unusually senior scope): note them; carry on.
+- **Stop and ask only for citizenship/PR-only roles** (including security clearances, which require citizenship). User instruction, 6 Nov 2026: "Only flag me if they take citizens or PR only." Everything else is not a reason to pause.
+- **Everything else is a note, not a stop** (3+ years or senior/staff level stated as mandatory, closing date passed, location outside Melbourne, "future sponsorship" wording): record it in `notes.md`, mention it in one line in the reply, and carry on to the PDF.
 
 ## 3. Criteria → evidence map
 

@@ -4,7 +4,7 @@ Captured 6 Nov 2026. Full ad text in `jd.md` (pasted from LinkedIn).
 
 ## 1. Fit check
 
-### Hard blockers
+### Seniority blockers (user proceeding regardless)
 
 | Signal | Assessment |
 | --- | --- |
@@ -23,8 +23,16 @@ Eval design (IoU harness, sensitivity harness, ground-truth set, negative result
 
 ### Proceed?
 
-**Paused — asked the user** (hard blocker).
+Yes — user chose to apply anyway (6 Nov 2026). Years of experience are not inflated anywhere; profile says "open to relocating to Sydney".
 
 ## Log
 
 - **2026-11-06** — JD captured; fit check found hard blockers (3+ yrs mandatory, Senior–Staff, poster's 2+ yrs applied ML / 1+ yr agentic). Asked whether to proceed.
+- **2026-11-06** — User: proceed; only flag citizen/PR-only roles from now on. Drafted, proofed (2 pages, no defects, page 2 ~55%), rendered `Faraaz_Mohammed_Resume_ProFound-People_Machine-Learning-Engineer.pdf`. Status **Ready**.
+
+## Changes vs base
+- Profile rewritten around evaluation, LLM systems (router, QLoRA feedback loop, retrieval) and the ad's title; relocation to Sydney stated.
+- Skills cut to 4 lines; LLM systems line leads with evaluation/retrieval/fine-tuning (the ad's order). Geospatial, Android, AI-assisted-engineering lines dropped.
+- Vayaa cut to 2 bullets (production Python/FastAPI, AWS). Prodegee: 8 bullets kept, reordered eval-first; handoff-memo clause dropped.
+- Key Projects: Gemma (tokens/fine-tune-from-usage framing), Bro, Agent skills, Fire Detection. Time Flow, MGM, NeuroVisualZ, IBM Z dropped. Education moved below projects.
+- Certifications trimmed to 2 lines.
