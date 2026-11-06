@@ -21,12 +21,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 10 | 2026-11-06 | ProFound People (recruiter; client undisclosed AI startup) | Machine Learning Engineer (Applied LLMs) | [PDF](ProFound-People_Machine-Learning-Engineer/Faraaz_Mohammed_Resume_ProFound-People_Machine-Learning-Engineer.pdf) | Sydney, hybrid | LinkedIn | Not stated | Ready | [ProFound-People_Machine-Learning-Engineer](ProFound-People_Machine-Learning-Engineer/) | 2026-11-06 |
 | 11 | 2026-11-06 | Shield AI | Engineer II, Deep Learning (R5178) | [PDF](Shield-AI_Engineer-II-Deep-Learning/Faraaz_Mohammed_Resume_Shield-AI_Engineer-II-Deep-Learning.pdf) | Melbourne, on-site | LinkedIn | Not stated | Ready | [Shield-AI_Engineer-II-Deep-Learning](Shield-AI_Engineer-II-Deep-Learning/) | 2026-11-06 |
 | 12 | 2026-11-06 | Maincode | Graduate Software Engineer | [PDF](Maincode_Graduate-Software-Engineer/Faraaz_Mohammed_Resume_Maincode_Graduate-Software-Engineer.pdf) | Melbourne, on-site | LinkedIn | Not stated | Ready | [Maincode_Graduate-Software-Engineer](Maincode_Graduate-Software-Engineer/) | 2026-11-06 |
+| 13 | 2026-11-06 | Capgemini | IT Analyst Intern – AI and Software (2026/27 Summer Internship, ref 575576) | [PDF](Capgemini_IT-Analyst-Intern-AI-Software/Faraaz_Mohammed_Resume_Capgemini_IT-Analyst-Intern-AI-Software.pdf) | Melbourne / Sydney | Capgemini careers | Not stated | Ready | [Capgemini_IT-Analyst-Intern-AI-Software](Capgemini_IT-Analyst-Intern-AI-Software/) | 2026-11-06 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-11-06** — Capgemini / IT Analyst Intern – AI and Software: rendered, status **Ready**. Ad requires current enrolment (penultimate/final year); Faraaz graduated Jul 2026.
 
 - **2026-11-06** — Maincode / Graduate Software Engineer: rendered, status **Ready**. Third Maincode application (Back End and Talent Engineer applied 18 Sep, no response logged).
 
