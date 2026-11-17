@@ -15,6 +15,7 @@ role in Coles 360, applying that rigour to retail media measurement on loyalty a
 **Data & analytics:** pandas, PostgreSQL, Parquet, Jupyter / Colab, Kestra (pipeline orchestration), GeoPandas, QGIS
 **Machine learning & statistics:** XGBoost, scikit-learn, predictive modelling, evaluation design (precision/recall, IoU, sensitivity analysis, baseline and ground-truth construction)
 **Engineering:** Git / GitHub, Docker, AWS (RDS, ECS Fargate, CloudFormation), FastAPI, Linux
+**Currently learning (Nov–Dec 2026):** advanced SQL (CTEs, window functions), Snowflake, Power BI, campaign measurement (test vs control, difference-in-differences)
 **Generative AI:** prompt engineering, retrieval-grounded generation, MCP agents, LLM fine-tuning (QLoRA), Anthropic API
 
 ## Experience
