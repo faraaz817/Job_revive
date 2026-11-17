@@ -42,6 +42,8 @@ built two Android apps and an MCP-based LLM tool in 2026. Seeking graduate AI/ML
 - Tracked and reconciled stock in the inventory system, processed customer orders and resolved fulfilment discrepancies across 5 Melbourne stores; trained a new team member.
 
 ## Education
+### Full-Stack Data Professional program — The Data & AI Institute | commencing Nov 2026
+> SQL, Power BI, Azure data engineering (Data Factory, Databricks); includes a 6-month industry internship
 ### Master of Artificial Intelligence — RMIT University | Jul 2024 – Jul 2026
 > Melbourne, VIC  ·  Intelligent Decision Making (ASP/Clingo), Computer Vision, Machine Learning, AI Systems Design, IoT
 ### Bachelor of Technology (Information Technology) — Keshav Memorial Institute of Technology | Dec 2020 – May 2024

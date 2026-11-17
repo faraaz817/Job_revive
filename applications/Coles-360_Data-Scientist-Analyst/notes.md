@@ -74,3 +74,4 @@ The gaps are the team's core work. The resume can't fix them; a project can.
 ## 5. Log
 
 - **2026-11-17** — Referral from Michael Luo (Coles 360). No PDs yet. Provisional resume drafted against reconstructed criteria; proofed clean (2 pages, page 2 53%). Status **Draft**.
+- **2026-11-17** — Added the Full-Stack Data Professional program (The Data & AI Institute, commencing 24 Nov 2026; enrolled) to Education here and in `base_resume.md`. Course line only — no skills claimed from it until done. Change to "Nov 2026 – present" after the 24th.
