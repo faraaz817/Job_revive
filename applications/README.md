@@ -18,13 +18,15 @@ table. Say "applied to X" / "X rejected me" / "interview with X" to update a sta
 | 7 | 2026-09-18 | Maincode | Talent Engineer | [PDF](Maincode_Talent-Engineer/Faraaz_Mohammed_Resume_Maincode_Talent-Engineer.pdf) | Melbourne, hybrid | [LinkedIn](https://www.linkedin.com/jobs/view/4457474292/) | Not stated | Applied | [Maincode_Talent-Engineer](Maincode_Talent-Engineer/) | 2026-09-18 |
 | 8 | 2026-09-18 | Service Stream | IT Engineer Graduate (2027 Ignite) | — | Melbourne, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4464198036/) | 2026-10-04 | Withdrawn | [Service-Stream_IT-Engineer-Graduate](Service-Stream_IT-Engineer-Graduate/) | 2026-09-18 |
 | 9 | 2026-09-18 | AEY & Associates | Robotics Software Engineer | [PDF](AEY_Robotics-Software-Engineer/Faraaz_Mohammed_Resume_AEY_Robotics-Software-Engineer.pdf) | Sydney, on-site | [LinkedIn](https://www.linkedin.com/jobs/view/4456677999/) | Not stated | Applied | [AEY_Robotics-Software-Engineer](AEY_Robotics-Software-Engineer/) | 2026-09-18 |
-| 10 | 2026-11-17 | Coles Group (Coles 360) | Data Scientist / Data Analyst (referral, PDs pending) | — | Melbourne (Hawthorn East / Chadstone TBC), hybrid | Referral — Michael Luo (LinkedIn) | Not published | Draft | [Coles-360_Data-Scientist-Analyst](Coles-360_Data-Scientist-Analyst/) | 2026-11-17 |
+| 10 | 2026-11-17 | Coles Group (Coles 360) | Data Scientist / Data Analyst (referral, PDs pending) | [PDF](Coles-360_Data-Scientist-Analyst/Faraaz_Mohammed_Resume_Coles-360_Data-Scientist-Analyst.pdf) | Melbourne (Hawthorn East / Chadstone TBC), hybrid | Referral — Michael Luo (LinkedIn) | Not published | Ready | [Coles-360_Data-Scientist-Analyst](Coles-360_Data-Scientist-Analyst/) | 2026-11-17 |
 
 **Status:** Draft → Ready → Applied → Screening → Interview → Offer / Rejected / No response / Withdrawn
 
 ## Updates log
 
 Newest first. One line per event, dated; rejection reasons recorded verbatim when given.
+
+- **2026-11-17** — Coles 360 / Data Scientist + Data Analyst: resume approved for review and rendered ahead of the PDs (for sending to Michael). Skills include a "Coles 360 stack (training now)" line; measurement project marked in progress. Re-tailor when PDs arrive. Status **Ready**.
 
 - **2026-11-17** — Coles 360 / Data Scientist + Data Analyst: referral offered by Michael Luo (team member); PDs not yet released. Provisional resume drafted from earlier Coles 360 ads. Open: 485 acceptance, 3+ years risk on DA, no measurement/Snowflake/dbt evidence. Status **Draft**.
 
