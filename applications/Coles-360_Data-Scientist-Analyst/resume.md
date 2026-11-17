@@ -4,11 +4,11 @@ Melbourne, VIC  •  0435 825 949  •  faraaz817@outlook.com
 _Full Australian working rights (Temporary Graduate visa, subclass 485) — no sponsorship required  •  Available immediately_
 
 ## Profile
-Master of Artificial Intelligence graduate (RMIT, 2026) with a B.Tech in IT. In an AI/ML engineering internship, built
-Python data pipelines and predictive models over 7.2M building polygons, and the measurement behind them: sensitivity analysis,
-a ground-truth set that corrected a published baseline, and a check showing a model's headline metric was not accuracy.
-Now a full-stack developer intern taking work from requirements to a live PostgreSQL / AWS deployment, with retail
-operations experience at Amart. Seeking a Data Scientist or Data Analyst role in Coles 360.
+Master of Artificial Intelligence graduate (RMIT, 2026) focused on measurement that holds up. In an AI/ML engineering
+internship, built Python pipelines and predictive models over 7.2M building polygons, then the checks behind them: a
+ground-truth set that corrected a published baseline, and a test showing a model's headline "confidence" wasn't accuracy.
+Retail operations experience at Amart; end-to-end delivery on PostgreSQL and AWS. Seeking a Data Scientist or Data Analyst
+role in Coles 360, applying that rigour to retail media measurement on loyalty and transaction data.
 
 ## Technical Skills
 **Languages:** Python (primary), SQL, Bash, TypeScript
