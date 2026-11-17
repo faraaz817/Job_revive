@@ -10,12 +10,12 @@ _Full Australian working rights (Temporary Graduate visa, subclass 485) — no s
 Master of Artificial Intelligence graduate (RMIT, 2026) focused on measurement that holds up. In an AI/ML engineering
 internship, built Python pipelines and predictive models over 7.2M building polygons, then the checks behind them: a
 ground-truth set that corrected a published baseline, and a test showing a model's headline "confidence" wasn't accuracy.
-Retail operations experience at Amart; end-to-end delivery on PostgreSQL and AWS. Seeking a Data Scientist or Data Analyst
+Now building a campaign-lift analysis on supermarket loyalty data in **Snowflake, SQL and Power BI**. Seeking a Data Scientist or Data Analyst
 role in Coles 360, applying that rigour to **retail media measurement on loyalty and transaction data**.
 
 ## Technical Skills
-**Data skills:** Python, SQL, pandas, PostgreSQL, Parquet, XGBoost, scikit-learn, predictive modelling, evaluation design (sensitivity analysis, IoU, precision/recall, baseline and ground-truth construction), Kestra pipelines, Jupyter / Colab, GeoPandas, QGIS
-**Data skills — learning now (Nov–Dec 2026):** advanced SQL (CTEs, window functions), Snowflake, Azure (Data Factory, Databricks, Synapse), Power BI, campaign measurement (test vs control, difference-in-differences)
+**Retail media stack (Coles 360) — in progress, Nov–Dec 2026:** **Power BI**, **Snowflake**, **Azure** (Data Factory, Databricks, Synapse), **advanced SQL** (CTEs, window functions), campaign measurement (test vs control, difference-in-differences)
+**Data skills:** SQL, Python (pandas), PostgreSQL, Parquet, XGBoost, scikit-learn, predictive modelling, measurement and evaluation design (sensitivity analysis, baselines, ground truth, precision/recall, IoU), Kestra pipelines, Jupyter / Colab
 **Agentic skills:** MCP servers, Claude Code (skills, hooks, subagents), Cursor, Anthropic API (model routing, prompt caching), prompt engineering, retrieval-grounded generation, LLM fine-tuning (QLoRA), Ollama
 **SDE skills:** TypeScript, Bash, FastAPI, React, Git / GitHub, Docker, AWS (RDS, ECS Fargate, CloudFormation), Linux, REST / JSON
 
