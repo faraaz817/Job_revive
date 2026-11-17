@@ -45,10 +45,9 @@ role in Coles 360, applying that rigour to **retail media measurement on loyalty
 
 ## Key Projects
 ### Retail campaign measurement — did the campaign lift sales? · Snowflake, SQL, Python, Power BI | Nov 2026 – in progress
-- Measuring whether a supermarket campaign caused extra sales on Dunnhumby's Complete Journey loyalty data (~2,500
-  households, two years of transactions): the **closed-loop question retail media is sold on**.
-- Approach: matched control group (propensity scores on pre-campaign spend, frequency, demographics), difference-in-
-  differences with bootstrap confidence intervals, pre-trend and placebo checks; results in a **Power BI dashboard**.
+- Measuring whether a supermarket campaign lifted sales, using Dunnhumby's Complete Journey loyalty dataset and a
+  matched control group: the **closed-loop question retail media is sold on**.
+- Building the analysis in Snowflake and SQL, with results in a **Power BI dashboard**.
 
 ### Gemma Delegation System — local/cloud LLM hybrid · Node.js, MCP SDK, Ollama, Unsloth/QLoRA, Colab | May 2026
 - Built an MCP server that lets Claude Code or Cursor delegate lightweight tasks to a locally hosted Gemma model,
@@ -57,8 +56,8 @@ role in Coles 360, applying that rigour to **retail media measurement on loyalty
   examples (4-bit QLoRA, LoRA r=16) and exports GGUF back into Ollama.
 ↳ GitHub: [github.com/faraaz817/gemma-delegation-system](https://github.com/faraaz817/gemma-delegation-system)
 
-- **Bro — interactive AI portfolio chatbot:** recruiter-facing chatbot on the portfolio site that answers questions from a profile corpus via server-side retrieval with anti-hallucination constraints; Anthropic API. (Next.js, TypeScript, Prisma/Postgres)
-↳ Live: [faraaz817.github.io](https://faraaz817.github.io)
+- **Bro — interactive AI portfolio chatbot:** recruiter-facing chatbot on the portfolio site that answers questions from a profile corpus via server-side retrieval with anti-hallucination constraints (Anthropic API): [faraaz817.github.io](https://faraaz817.github.io)
+- **Agent skills for Claude Code / Cursor:** authored five reusable skills — CO-STAR requirements builder, Socratic tutor, better-way reviewer, skill sync, and a pikepdf CLI that unlocks signature-locked PDFs.  [github.com/faraaz817/My_Skills](https://github.com/faraaz817/My_Skills)
 
 ## Publication
 K. M. Asudaria, **M. F. Abdul Khadeer**, S. S. Rafai, K. S. Reddy. “A Comparative Study of Edge Detection Techniques to Identify Maize Leaf Diseases using Machine Learning.” _Quest Journal of Software Engineering and Simulation_, Vol. 9(12), pp. 43–51, Dec 2023 (ISSN 2321-3795, peer-reviewed). Benchmarked 5 edge-detection operators × 8 classifiers (40 combinations); best result Sobel + MLP at 94.75%.
