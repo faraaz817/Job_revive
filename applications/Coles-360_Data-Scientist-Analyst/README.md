@@ -43,8 +43,9 @@ role in Coles 360, applying that rigour to **retail media measurement on loyalty
 
 ### Dispatch Team Member — Amart Furniture | Feb 2025 – Mar 2026
 > Melbourne, VIC  ·  part-time, on-site, concurrent with full-time study
-- Kept inventory records accurate across 5 Melbourne stores: reconciled stock in the inventory system, processed
-  customer orders and resolved fulfilment discrepancies with the team; trained a new team member.
+- Put up price tickets and promo displays; noticed **promoted items moved faster** and prepped stock and dispatch early.
+- Kept inventory records accurate across 5 Melbourne stores in a small dispatch team (2–5): reconciled stock, processed
+  customer orders and resolved fulfilment discrepancies; trained a new team member.
 
 ## Key Projects
 ### Retail campaign measurement — did the campaign lift sales? · Snowflake, SQL, Python, Power BI | Nov 2026 – in progress
