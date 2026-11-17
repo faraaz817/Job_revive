@@ -1,6 +1,6 @@
 # FARAAZ MOHAMMED
 Melbourne, VIC  •  0435 825 949  •  faraaz817@outlook.com
-[linkedin.com/in/faraaz817](https://linkedin.com/in/faraaz817)  •  [github.com/faraaz817](https://github.com/faraaz817)  •  [job-go-mauve.vercel.app/portfolio](https://job-go-mauve.vercel.app/portfolio)
+[linkedin.com/in/faraaz817](https://linkedin.com/in/faraaz817)  •  [github.com/faraaz817](https://github.com/faraaz817)  •  [faraaz817.github.io — talk to my AI chatbot](https://faraaz817.github.io)
 _Full Australian working rights (Temporary Graduate visa, subclass 485) — no sponsorship required  •  Available immediately_
 
 ## Profile
@@ -67,8 +67,8 @@ built two Android apps and an MCP-based LLM tool in 2026. Seeking graduate AI/ML
 - Closed the loop: accept/reject feedback updates a capability profile and curates a JSONL dataset; a Colab notebook fine-tunes on confirmed examples (4-bit QLoRA, LoRA r=16) and exports GGUF back into Ollama.
 ↳ GitHub: [github.com/faraaz817/gemma-delegation-system](https://github.com/faraaz817/gemma-delegation-system)
 
-- **Bro — interactive AI portfolio chatbot:** recruiter-facing site that answers questions from a profile corpus via server-side retrieval with anti-hallucination constraints; Anthropic API, deployed on Vercel. (Next.js, TypeScript, Prisma/Postgres)
-↳ Live: [job-go-mauve.vercel.app/portfolio](https://job-go-mauve.vercel.app/portfolio)
+- **Bro — interactive AI portfolio chatbot:** recruiter-facing chatbot on the portfolio site that answers questions from a profile corpus via server-side retrieval with anti-hallucination constraints; Anthropic API. (Next.js, TypeScript, Prisma/Postgres)
+↳ Live: [faraaz817.github.io](https://faraaz817.github.io)
 - **Fire Detection & Alerting System (B.Tech capstone, team of 4):** trained a custom OpenCV Haar cascade (Python) for real-time fire detection, chosen over heavier detectors for latency; a threaded pipeline raises an alarm and sends WhatsApp alerts to the nearest fire station.
 - **NeuroVisualZ — exam-timetabling AI, RMIT (team of 3):** built the YAML-to-ASP encoder that translates timetabling instances into Clingo logic programs; scoped Levels 1–4 (room allocation, ITC'07 soft constraints, Prolog validator).
 - **Agent skills for Claude Code / Cursor:** authored five reusable skills — CO-STAR requirements builder, Socratic tutor, better-way reviewer, skill sync, and a pikepdf CLI that unlocks signature-locked PDFs.  [github.com/faraaz817/My_Skills](https://github.com/faraaz817/My_Skills)
