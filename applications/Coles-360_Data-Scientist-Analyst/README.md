@@ -48,9 +48,10 @@ role in Coles 360, applying that rigour to **retail media measurement on loyalty
 
 ## Key Projects
 ### Retail campaign measurement — did the campaign lift sales? · Snowflake, SQL, Python, Power BI | Nov 2026 – in progress
-- Measuring whether a supermarket campaign lifted sales, using Dunnhumby's Complete Journey loyalty dataset and a
-  matched control group: the **closed-loop question retail media is sold on**.
-- Building the analysis in Snowflake and SQL, with results in a **Power BI dashboard**.
+- Testing whether a targeted supermarket campaign drove extra spend, on Dunnhumby's Complete Journey data (two years
+  of loyalty-card transactions from ~2,500 households).
+- Comparing campaign households with similar non-targeted ones (matched on past spend and shopping frequency),
+  before vs during the campaign, in Snowflake SQL and Python; reporting the sales lift in a **Power BI dashboard**.
 
 ### Gemma Delegation System — local/cloud LLM hybrid · Node.js, MCP SDK, Ollama, Unsloth/QLoRA, Colab | May 2026
 - Built an MCP server that lets Claude Code or Cursor delegate lightweight tasks to a locally hosted Gemma model,
